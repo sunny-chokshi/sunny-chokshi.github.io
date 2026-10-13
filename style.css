@@ -16,7 +16,8 @@ header.hero{padding:64px 0 56px;display:grid;grid-template-columns:1fr 1.15fr;ga
 .hero h1{font-weight:600;font-size:clamp(2.2rem,4.6vw,3.3rem);line-height:1.05;letter-spacing:-.02em;margin:0 0 16px}
 .hero .who{margin:0 0 20px;color:var(--muted)}
 .hero .thesis{font-size:1.2rem;line-height:1.5;margin:0 0 24px;max-width:30ch}
-.contact a{margin-right:18px;font-weight:500}
+.contact a{margin-right:20px;font-weight:500;display:inline-flex;align-items:center;gap:7px}
+.contact svg{width:18px;height:18px;flex:none}
 /* demo */
 .demo{background:var(--code-bg);color:var(--code-ink);border-radius:14px;padding:22px 22px 18px;box-shadow:0 18px 40px -22px rgba(10,20,50,.55)}
 .demo pre{margin:0 0 18px;font:14.5px/1.7 "JetBrains Mono",ui-monospace,monospace;white-space:pre-wrap;word-break:break-word;min-height:7.2em}
