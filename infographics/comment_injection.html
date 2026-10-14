@@ -1,0 +1,59 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=IBM+Plex+Sans:wght@400;500;600&display=swap');
+  *{margin:0;padding:0;box-sizing:border-box}
+  :root{--ink:#0f172a;--muted:#64748b;--line:#e2e8f0;--teal:#0f766e;--tealL:#ccfbf1;--danger:#be123c;--dangerL:#ffe4e6;--good:#15803d;--goodL:#dcfce7}
+  body{width:1080px;height:1350px;background:#f1f3f9;font-family:'IBM Plex Sans',sans-serif;color:var(--ink);padding:58px 58px 44px}
+  .wrap{height:100%;display:flex;flex-direction:column}
+  h1{font-family:'Sora',sans-serif;font-weight:800;font-size:66px;line-height:1.03;letter-spacing:-1.6px}
+  h1 .hl{background:var(--danger);color:#fff;padding:2px 16px;border-radius:12px}
+  .sub{font-size:24px;color:var(--muted);margin-top:18px;max-width:900px;line-height:1.38}
+  .meta{display:flex;gap:10px;margin-top:22px;flex-wrap:wrap}
+  .chip{background:#fff;border:1px solid var(--line);border-radius:999px;padding:10px 20px;font-size:18px;font-weight:600;color:#334155}
+  .chip b{color:var(--teal)}
+  .bars{flex:1;display:flex;flex-direction:column;justify-content:center;gap:40px;margin:30px 0}
+  .brow{display:flex;flex-direction:column;gap:14px}
+  .btop{display:flex;align-items:baseline;justify-content:space-between}
+  .blab{font-family:'Sora',sans-serif;font-weight:700;font-size:30px;letter-spacing:-.4px}
+  .bnote{font-size:19px;color:var(--muted);margin-top:3px;font-weight:400;font-family:'IBM Plex Sans'}
+  .bval{font-family:'Sora',sans-serif;font-weight:800;font-size:46px}
+  .track{height:40px;background:#e8ebf3;border-radius:12px;overflow:hidden}
+  .fill{height:100%;border-radius:12px;display:flex;align-items:center}
+  .tag{display:inline-block;font-size:16px;font-weight:700;padding:5px 12px;border-radius:8px;margin-bottom:2px}
+  .t-good{background:var(--goodL);color:var(--good)}.t-bad{background:var(--dangerL);color:var(--danger)}.t-fix{background:var(--tealL);color:var(--teal)}
+  .take{background:var(--ink);color:#fff;border-radius:18px;padding:28px 32px}
+  .take b{font-family:'Sora',sans-serif;font-weight:800;font-size:30px;line-height:1.2;letter-spacing:-.4px;display:block}
+  .take span{font-size:21px;color:#cbd5e1;display:block;margin-top:10px;line-height:1.4}
+  .foot{display:flex;justify-content:space-between;align-items:center;margin-top:22px;font-size:17px;color:#475569}
+  .foot b{color:var(--ink)}
+</style></head>
+<body><div class="wrap">
+  <header>
+    <h1>One comment can <span class="hl">fool</span> an AI code reviewer</h1>
+    <div class="sub">A misleading comment, not a code change, drops how often an LLM catches a real vulnerability. Stripping comments before review brings it all the way back.</div>
+    <div class="meta">
+      <span class="chip"><b>4</b> open code models</span>
+      <span class="chip"><b>480</b> reviews per condition</span>
+      <span class="chip">detection rate on vulnerable code</span>
+    </div>
+  </header>
+  <div class="bars">
+    <div class="brow">
+      <div class="btop"><div><span class="tag t-good">baseline</span><div class="blab">No comment</div><div class="bnote">code reviewed as written</div></div><div class="bval" style="color:#15803d">90.0%</div></div>
+      <div class="track"><div class="fill" style="width:90%;background:#16a34a"></div></div>
+    </div>
+    <div class="brow">
+      <div class="btop"><div><span class="tag t-bad">attack</span><div class="blab">Misleading comment added</div><div class="bnote">a comment claiming the code is safe</div></div><div class="bval" style="color:#be123c">75.2%</div></div>
+      <div class="track"><div class="fill" style="width:75.2%;background:#e11d48"></div></div>
+    </div>
+    <div class="brow">
+      <div class="btop"><div><span class="tag t-fix">defense</span><div class="blab">Comments stripped</div><div class="bnote">remove comments, then review</div></div><div class="bval" style="color:#0f766e">90.0%</div></div>
+      <div class="track"><div class="fill" style="width:90%;background:#0d9488"></div></div>
+    </div>
+  </div>
+  <div class="take">
+    <b>The model was reading the comment, not just the code.</b>
+    <span>A 15-point drop from text that changes nothing about what the program does. The fix is cheap: strip comments before the model reviews.</span>
+  </div>
+  <div class="foot"><span>Sunny Chokshi &middot; IEEE Cyber-AI 2026</span><span><b>sunny-chokshi.github.io</b> &middot; dataset: CommentInject</span></div>
+</div></body></html>
