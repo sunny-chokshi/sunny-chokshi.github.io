@@ -1,6 +1,6 @@
 @import url(style.css);
-:root{--accent:#f2694a;--accent-ink:#c9482b;--paper:#f7f7f8;--panel:#fff;--ink:#222;--muted:#666;--line:#e6e6ea;--side:84px}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--paper:#14161b;--panel:#1b1e25;--ink:#ececf0;--muted:#a0a4b0;--line:#2a2e38;--accent-ink:#ff8a6b}}
+:root{--accent:#2f80ed;--accent-ink:#1d62c4;--paper:#f7f7f8;--panel:#fff;--ink:#222;--muted:#666;--line:#e6e6ea;--side:84px}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--paper:#14161b;--panel:#1b1e25;--ink:#ececf0;--muted:#a0a4b0;--line:#2a2e38;--accent-ink:#7db3ff}}
 body{font:17px/1.65 "Oxygen",system-ui,sans-serif;background:var(--paper);color:var(--ink);padding-left:var(--side)}
 a{color:var(--accent-ink)}
 .skip{position:absolute;left:-999px}.skip:focus{left:8px;top:8px;background:#fff;padding:8px;z-index:20}
@@ -66,3 +66,22 @@ body[data-page=home] .foot{display:none}
  #home.on{min-height:calc(100vh - 62px)}
 }
 .pubs li.live{border-left-color:var(--line)}.pubs .f{font-size:.95rem;max-width:none}
+
+/* v3: cube page transition, same effect and timing as the reference */
+body{padding-left:0}
+main{position:fixed;top:0;right:0;bottom:0;left:var(--side);min-height:0;overflow:hidden;perspective:1200px;transform-style:preserve-3d}
+main>.page,main>.page.on{display:none;position:absolute;inset:0;overflow-y:auto;overflow-x:hidden;max-width:none;margin:0;padding:56px clamp(20px,5vw,72px) 96px;animation:none;backface-visibility:hidden;background:var(--paper)}
+main>.page>*{max-width:1180px;margin-left:auto;margin-right:auto}
+main>.page.pt-page-current{display:block}
+#home,#home.on{align-items:center;justify-content:center}
+#home.pt-page-current{display:flex}
+main>.page.pt-page-ontop{z-index:5}
+.pt-page-rotateCubeTopOut{transform-origin:50% 100%;animation:.6s ease-in 0s 1 normal both running rotateCubeTopOut!important}
+.pt-page-rotateCubeTopIn{transform-origin:50% 0%;animation:.6s ease-in 0s 1 normal both running rotateCubeTopIn!important}
+@keyframes rotateCubeTopOut{50%{animation-timing-function:ease-out;transform:translateY(-50%) translateZ(-200px) rotateX(45deg)}100%{opacity:.3;transform:translateY(-100%) rotateX(90deg)}}
+@keyframes rotateCubeTopIn{0%{opacity:.3;transform:translateY(100%) rotateX(-90deg)}50%{animation-timing-function:ease-out;transform:translateY(50%) translateZ(-200px) rotateX(-45deg)}}
+html:not(.js) main{position:static;overflow:visible}
+html:not(.js) main>.page{display:block;position:relative}
+p.note{color:var(--muted);font-size:.8rem;margin-top:28px}
+@media(max-width:640px){main{left:0;top:62px}}
+#home{text-align:center}main>#home>.hero{max-width:640px;margin:0 auto}main>#home>.bgshapes{max-width:none;margin:0}

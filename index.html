@@ -73,6 +73,7 @@
       <span class="f">The same cryptographic misuse, written through an alias or a default, mostly makes models flag correct code rather than miss the bug.</span>
       <span class="l"><a href="papers/Chokshi_DoesIndirectionHurt_v9.pdf">PDF</a>, <a href="https://doi.org/10.5281/zenodo.23351769">Zenodo</a></span></li>
   </ul>
+<p class="note">Paper PDFs are accepted author versions. &copy; 2026 IEEE. Personal use of this material is permitted. Permission from IEEE must be obtained for all other uses. Final versions will appear in IEEE Xplore.</p>
 </section>
 <section class="page" id="service" data-page><h2>Peer review and service</h2>
   <div class="svcs">
@@ -100,7 +101,6 @@
 </section>
 </main>
 <div class="pager"><button id="prev" aria-label="Previous page">&#8249;</button><button id="next" aria-label="Next page">&#8250;</button></div>
-<footer class="foot"><p>Paper PDFs are accepted author versions. &copy; 2026 IEEE. Personal use of this material is permitted. Permission from IEEE must be obtained for all other uses. Final versions will appear in IEEE Xplore.</p></footer>
 <script>
 (function(){
   var cline=document.getElementById('cline'),badge=document.getElementById('badge'),note=document.getElementById('note'),btn=document.getElementById('toggle');
@@ -120,15 +120,31 @@
 </script>
 <script>
 (function(){
- var pages=[].slice.call(document.querySelectorAll('[data-page]')),links=[].slice.call(document.querySelectorAll('.side nav a')),ids=pages.map(function(p){return p.id});
+ var pages=[].slice.call(document.querySelectorAll('[data-page]')),links=[].slice.call(document.querySelectorAll('.side nav a')),ids=pages.map(function(p){return p.id}),cur=null,busy=false,want=null;
+ var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
  document.documentElement.className+=' js';
- function go(){var id=location.hash.slice(1);if(ids.indexOf(id)<0)id='home';
-  pages.forEach(function(p){p.classList.toggle('on',p.id===id)});
-  links.forEach(function(a){if(a.dataset.p===id)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current')});
-  document.body.dataset.page=id;window.scrollTo(0,0);}
- function step(d){var i=ids.indexOf(document.body.dataset.page);location.hash=ids[(i+d+ids.length)%ids.length];}
+ function idOf(){var id=location.hash.slice(1);return ids.indexOf(id)<0?'home':id}
+ function mark(id){links.forEach(function(a){if(a.dataset.p===id)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current')});document.body.dataset.page=id}
+ function show(id){
+  var next=document.getElementById(id);
+  if(!cur){next.classList.add('pt-page-current');cur=next;mark(id);return}
+  if(cur===next)return;
+  if(busy){want=id;return}
+  mark(id);
+  if(reduce){cur.classList.remove('pt-page-current');next.classList.add('pt-page-current');cur=next;next.scrollTop=0;return}
+  busy=true;var out=cur;next.scrollTop=0;
+  out.classList.add('pt-page-current','pt-page-rotateCubeTopOut','pt-page-ontop');
+  next.classList.add('pt-page-current','pt-page-rotateCubeTopIn');
+  setTimeout(function(){
+   out.classList.remove('pt-page-current','pt-page-rotateCubeTopOut','pt-page-ontop');
+   next.classList.remove('pt-page-rotateCubeTopIn');
+   cur=next;busy=false;
+   if(want&&want!==cur.id){var w=want;want=null;show(w)}else want=null;
+  },620);
+ }
+ function step(d){var i=ids.indexOf(cur.id);location.hash=ids[(i+d+ids.length)%ids.length]}
  document.getElementById('prev').onclick=function(){step(-1)};document.getElementById('next').onclick=function(){step(1)};
- window.addEventListener('hashchange',go);go();
+ window.addEventListener('hashchange',function(){show(idOf())});show(idOf());
 })();
 </script>
 </body></html>
