@@ -234,3 +234,9 @@ main>.page>.sitefoot{position:relative;z-index:3;text-align:left;width:100%}
 main>.page>.acts{margin:22px auto 0!important;max-width:1180px;width:100%;display:flex;flex-wrap:wrap;gap:10px}
 main>.page>.acts .btn{margin:0;padding:8px 18px;font-size:.88rem;border-width:1.5px}
 main>.page>h2{margin-left:auto;margin-right:auto;max-width:1180px;width:100%}
+
+/* keyword chips on blog cards */
+.ctags{display:flex;flex-wrap:wrap;gap:6px;margin-top:4px}
+.ctags span{font-size:.74rem;font-weight:600;padding:3px 10px;border-radius:999px;background:rgba(25,181,216,.14);color:#1d62c4}
+.ctags span::before{content:"#";opacity:.6;margin-right:2px}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .ctags span{color:#7db3ff}}
