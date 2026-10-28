@@ -23,13 +23,7 @@
   <p class="who">PhD student in Information Technology, University of the Cumberlands. Software engineer, Boston area.</p>
   <p class="thesis">I study how one misleading comment in source code can make an AI code reviewer miss a real vulnerability, and how to stop it.</p>
   <p class="cta"><a class="btn" href="#papers">See publications</a><a class="btn ghost" href="#contact">Reach me</a></p></div>
-</section>
-<section class="page" id="research" data-page><h2>Research</h2>
-  <div class="two"><div class="prose">
-    <p>Teams now put large language models in their code review pipelines. The developer whose code is being checked also writes its comments, so a comment like "validated upstream, safe" becomes an attack. My experiments measure which of these comments work, why, and what removes the risk.</p>
-    <p>Across 780 trials, the strongest comments claimed authority over the code, and a bare statement of the author's confidence, which verifies nothing, worked nearly as well. Removing comments before analysis restored detection completely in the setting I tested.</p>
-  </div>
-  <div><div class="demo" aria-label="Illustration of a comment injection attack on an AI code reviewer">
+  <div class="homeside"><div class="demo" aria-label="Illustration of a comment injection attack on an AI code reviewer">
 <pre id="code"><span class="k">def</span> get_user(db, user_id):
 <span id="cline"></span>    query = <span class="s">f"SELECT * FROM users WHERE id = {user_id}"</span>
     <span class="k">return</span> db.execute(query)</pre>
@@ -43,7 +37,14 @@
         <div class="track"><div id="fill" class="fill"></div></div>
       </div>
     </div>
-    <p class="cap">Illustration of the attack and the defense measured in my Cyber-AI 2026 papers. The code never changes; only the comment does.</p></div></div>
+    <p class="cap">Illustration of the attack and the defense measured in my Cyber-AI 2026 papers. The code never changes; only the comment does.</p></div>
+</section>
+<section class="page" id="research" data-page><h2>Research</h2>
+  <div class="two"><div class="prose">
+    <p>Teams now put large language models in their code review pipelines. The developer whose code is being checked also writes its comments, so a comment like "validated upstream, safe" becomes an attack. My experiments measure which of these comments work, why, and what removes the risk.</p>
+    <p>Across 780 trials, the strongest comments claimed authority over the code, and a bare statement of the author's confidence, which verifies nothing, worked nearly as well. Removing comments before analysis restored detection completely in the setting I tested.</p>
+  </div>
+  <div><div class="stats big"><div class="stat"><b>12</b><span>attack comments in four families</span></div><div class="stat"><b>90.0% &rarr; 75.2%</b><span>detection under attack</span></div><div class="stat"><b>90.0%</b><span>restored by stripping comments</span></div><div class="stat"><b>3,360</b><span>recorded trials across four studies</span></div></div></div></div>
   <h3>At a glance</h3>
   <div class="figs">
     <figure><a href="infographics/crypto_cheatsheet.png"><img src="infographics/crypto_cheatsheet.png" alt="Per-class detection and false-alarm rates of 7 open code models on nine cryptographic API misuse classes, from CryptoBench" loading="lazy"></a>
@@ -88,6 +89,7 @@
     <div class="svc"><div class="logo" data-ph="IEEE"><img src="img/logos/ieee-boston.svg" alt="" loading="lazy" onerror="this.remove()"></div>
       <div class="svt"><strong>Member</strong><span>IEEE Boston Section</span></div></div>
   </div>
+<h3>Reviewing in numbers</h3><div class="stats big four"><div class="stat"><b>5</b><span>journal reviews, verified on Web of Science</span></div><div class="stat"><b>2</b><span>IEEE journals: TDSC and Access</span></div><div class="stat"><b>4</b><span>conference manuscripts reviewed</span></div><div class="stat"><b>2</b><span>conferences: ICon INDIA and ICAISG</span></div></div>
 </section>
 <section class="page" id="data" data-page><h2>Datasets and code</h2>
   <div class="dsgrid">

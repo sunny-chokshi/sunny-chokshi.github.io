@@ -174,3 +174,17 @@ main>.page[class*="pt-in-"],main>.page[class*="pt-out-"]{animation-duration:.7s;
 .dsnote{margin-top:22px;border:1px dashed var(--accent);border-radius:16px;padding:24px 28px;background:linear-gradient(135deg,rgba(47,128,237,.06),rgba(25,181,216,.06))}
 .dsnote h3{margin:0 0 8px}.dsnote p{margin:0 0 8px;max-width:75ch}
 @media(max-width:900px){.dsgrid{grid-template-columns:1fr}}
+
+/* v5: fill the pages */
+#home,#home.pt-page-current{gap:clamp(24px,4vw,64px);padding-right:clamp(20px,4vw,64px)}
+#home.pt-page-current{display:flex;align-items:center}
+main>#home>.hero{flex:0 1 520px;margin-left:clamp(0px,3vw,48px)}
+.homeside{position:relative;z-index:1;flex:1 1 480px;max-width:620px;min-width:0}
+.homeside .demo{box-shadow:0 30px 60px -28px rgba(14,26,51,.6);border:1px solid rgba(255,255,255,.08)}
+.stats.big{grid-template-columns:repeat(2,1fr);gap:16px}
+.stats.big .stat{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:20px 22px;box-shadow:0 10px 30px -22px rgba(20,33,61,.35)}
+.stats.big .stat b{font-size:1.9rem}
+.stats.big.four{grid-template-columns:repeat(4,1fr)}
+@media(max-width:1000px){#home.pt-page-current{flex-direction:column;align-items:flex-start;justify-content:center}.homeside{width:100%;max-width:none}.stats.big.four{grid-template-columns:1fr 1fr}}
+@media(max-width:640px){.stats.big,.stats.big.four{grid-template-columns:1fr}}
+.stats.big .stat b{font-size:1.6rem;white-space:nowrap}
