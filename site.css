@@ -240,3 +240,7 @@ main>.page>h2{margin-left:auto;margin-right:auto;max-width:1180px;width:100%}
 .ctags span{font-size:.74rem;font-weight:600;padding:3px 10px;border-radius:999px;background:rgba(25,181,216,.14);color:#1d62c4}
 .ctags span::before{content:"#";opacity:.6;margin-right:2px}
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .ctags span{color:#7db3ff}}
+
+/* icons on blog buttons */
+main>.page>.acts .btn{display:inline-flex;align-items:center}
+.btn .bi{display:inline-grid;place-items:center;flex:0 0 auto;width:22px;height:22px;margin-right:9px;border-radius:50%;background:var(--c,#2a6df4);color:#fff;font-size:.68rem;font-weight:800;line-height:1}
