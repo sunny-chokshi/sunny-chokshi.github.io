@@ -16,12 +16,16 @@
 <p class="v">Sunny Chokshi. October 28, 2026.</p>
 <p><img src="../img/blog-hex-key-size.png" alt="0xC00 equals a 3072-bit key. Secure, yet it drew false alarms. Minus 4.5 points balanced accuracy, plus 9.1 points false positives, 16 models, 90 snippet pairs." width="1200" height="627" style="max-width:100%;height:auto"></p>
 <p>I wanted to know whether an LLM code reviewer follows what the code does or what the code looks like. Cryptographic API misuse is a clean place to ask, because the same insecure choice can be written in many ways.</p>
-<p>The setup: 90 pairs of Python snippets across nine misuse classes. Each pair holds a vulnerable snippet and a secure twin. For 80 pairs I wrote a plain form, with the misuse at the call site under its familiar name, and an indirect form that reaches the same choice through an alias, constant, default, or configuration value. I ran 16 open models.</p>
+<h2>The setup</h2>
+<p>I used 90 pairs of Python snippets across nine misuse classes. Each pair holds a vulnerable snippet and a secure twin. For 80 pairs I wrote a plain form, with the misuse at the call site under its familiar name, and an indirect form that reaches the same choice through an alias, constant, default, or configuration value. I ran 16 open models.</p>
 <p>The secure twins already showed a problem. Two models flag nearly every snippet, and four more flag over 70% of secure code. A reviewer that flags nearly everything tells me little about the code.</p>
+<h2>What indirection did to the scores</h2>
 <p>Indirection lowered the balanced accuracy of the seven strongest models by 4.5 points over the 80 pairs (pair-cluster 95% CI 1.3 to 7.6). On the 47 pairs that survive a post hoc stimulus audit, the drop was 5.3 points (CI 2.1 to 8.5).</p>
 <p>Where the drop comes from needs care. After the audit it is mainly extra flags on correct code. False positives rose 9.1 points (CI 4.2 to 14.6), mostly in three models. Detection of real misuse fell 3.6 points over all 80 pairs (CI 1.0 to 6.5), but only 1.5 points on the audited pairs, and that interval (CI -1.6 to 4.8) includes zero.</p>
+<h2>Where the false alarms sit</h2>
 <p>Exploratory splits point at where the false alarms come from. Most of the net false-alarm rise sits in pairs where the safe value has left its usual spelling or place at the call site. A 3072-bit key size written as 0xC00 is the example I keep coming back to. My reading is that the models react to an unfamiliar spelling instead of the value. The paper does not test that directly.</p>
-<p>Limits. The snippets are Python and I wrote them. The models are open models. The audit was post hoc and the splits are exploratory. This is a preprint, it is not peer reviewed, and it carries the notice that it has been submitted to the IEEE for possible publication.</p>
+<h2>Limits</h2>
+<p>The snippets are Python and I wrote them. The models are open models. The audit was post hoc and the splits are exploratory. This is a preprint, it is not peer reviewed, and it carries the notice that it has been submitted to the IEEE for possible publication.</p>
 <p>Open question for the next study: do the extra flags go away if the reviewer is told to normalize values before judging? I have not tested that.</p>
 <h2>Read and cite</h2>
 <p><a href="https://doi.org/10.5281/zenodo.23351769">Preprint on Zenodo (doi:10.5281/zenodo.23351769)</a> &middot; <a href="../papers/does-indirection-hurt.html">Paper page and PDF</a></p>
