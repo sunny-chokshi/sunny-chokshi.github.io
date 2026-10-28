@@ -223,3 +223,9 @@ main>.page>.sitefoot{max-width:1180px}
 .sfbase{margin:26px 0 0;font-size:.82rem}
 .sitefoot[hidden]{display:none}
 @media(max-width:800px){.sfgrid{grid-template-columns:1fr}}
+
+/* footer fix, Oct 28: sit at the bottom of every page, below the content, and stay clickable */
+main>.page>.sitefoot{position:relative;z-index:3;text-align:left;width:100%}
+#home.pt-page-current{flex-wrap:wrap;align-content:center;row-gap:0}
+#home>.sitefoot{flex:0 0 100%;order:99;margin-top:56px}
+@media(max-width:1000px){#home.pt-page-current{flex-wrap:nowrap;align-content:normal}#home>.sitefoot{flex:0 0 auto;align-self:stretch}}
