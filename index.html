@@ -10,19 +10,26 @@
 
 <meta name="description" content="Sunny Chokshi studies how a single comment in source code can fool LLM-based code review, and how to stop it. PhD student, University of the Cumberlands.">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:ital@0;1&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css"></head>
+<link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&family=JetBrains+Mono:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="site.css"></head>
 <body>
-<div class="band"><div class="wrap">
-<header class="hero">
-  <div>
-    <h1>Sunny Chokshi</h1>
-    <p class="who">PhD student in Information Technology, University of the Cumberlands<br>Software engineer, Boston area</p>
-    <p class="thesis">I study how one misleading comment in source code can make an AI code reviewer miss a real vulnerability, and how to stop it.</p>
-    <p class="contact"><a href="mailto:emailchokshi@gmail.com"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="m3.5 6.5 8.5 6.5 8.5-6.5" fill="none" stroke="currentColor" stroke-width="2"/></svg>Email</a><a href="https://orcid.org/0009-0003-4738-7759"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="12" fill="#A6CE39"/><path fill="#fff" d="M7.2 9.4h1.6v8H7.2zM8 6.2a1 1 0 110 2 1 1 0 010-2zm2.4 3.2h3.3c3.1 0 4.5 2.2 4.5 4s-1.7 4-4.5 4h-3.3zm1.6 1.45v5.1h1.6c2.3 0 2.9-1.6 2.9-2.55 0-1.6-1-2.55-3-2.55z"/></svg>ORCID</a><a href="https://www.linkedin.com/in/sunnychokshi"><svg viewBox="0 0 24 24" aria-hidden="true"><rect width="24" height="24" rx="4" fill="#0A66C2"/><path fill="#fff" d="M5.4 9.3h2.9v9.3H5.4zM6.85 4.8a1.7 1.7 0 110 3.4 1.7 1.7 0 010-3.4zM10.1 9.3h2.8v1.3h.04c.39-.74 1.34-1.5 2.76-1.5 2.95 0 3.5 1.94 3.5 4.47v5.03h-2.9v-4.46c0-1.06-.02-2.43-1.48-2.43-1.48 0-1.71 1.16-1.71 2.35v4.54H10.1z"/></svg>LinkedIn</a><a href="https://github.com/sunny-chokshi"><svg viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>GitHub</a></p>
+<a class="skip" href="#main">Skip to content</a>
+<aside class="side"><a class="av" href="#home" aria-label="Home"><span>SC</span></a><a class="nm" href="#home">Sunny<br>Chokshi</a>
+<nav aria-label="Main"><a href="#home" data-p="home"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11 12 3l9 8v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z" fill="none" stroke="currentColor" stroke-width="1.600" stroke-linejoin="round"/></svg><span>Home</span></a><a href="#research" data-p="research"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10 3a7 7 0 1 0 4.2 12.6l5.1 5.1 1.4-1.4-5.1-5.1A7 7 0 0 0 10 3z" fill="none" stroke="currentColor" stroke-width="1.600" stroke-linejoin="round"/></svg><span>Research</span></a><a href="#papers" data-p="papers"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2h9l5 5v15H6zM14 3.5V8h4.5" fill="none" stroke="currentColor" stroke-width="1.600" stroke-linejoin="round"/></svg><span>Papers</span></a><a href="#service" data-p="service"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 3 6v6c0 5 3.8 8.7 9 10 5.2-1.300 9-5 9-10V6z" fill="none" stroke="currentColor" stroke-width="1.600" stroke-linejoin="round"/></svg><span>Service</span></a><a href="#data" data-p="data"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3C7 3 4 4.600 4 6.500v11C4 19.400 7 21 12 21s8-1.600 8-3.500v-11C20 4.600 17 3 12 3z" fill="none" stroke="currentColor" stroke-width="1.600" stroke-linejoin="round"/></svg><span>Data</span></a><a href="#contact" data-p="contact"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h18v14H3zM3.500 6.500 12 13l8.500-6.500" fill="none" stroke="currentColor" stroke-width="1.600" stroke-linejoin="round"/></svg><span>Contact</span></a></nav></aside>
+<main id="main">
+<section class="page" id="home" data-page><svg class="bgshapes" viewBox="0 0 800 600" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><polygon points="40,60 330,110 260,250 120,230"/><polygon points="520,20 640,40 600,160"/><polygon points="430,300 790,200 700,560 380,590"/><polygon points="0,380 230,330 280,560 20,600"/><polygon points="600,330 640,300 660,430"/></svg>
+  <div class="hero"><h1>Sunny Chokshi</h1>
+  <p class="role">LLM security researcher</p>
+  <p class="who">PhD student in Information Technology, University of the Cumberlands. Software engineer, Boston area.</p>
+  <p class="thesis">I study how one misleading comment in source code can make an AI code reviewer miss a real vulnerability, and how to stop it.</p>
+  <p class="cta"><a class="btn" href="#papers">Read the papers</a><a class="btn ghost" href="#contact">Get in touch</a></p></div>
+</section>
+<section class="page" id="research" data-page><h2>Research</h2>
+  <div class="two"><div class="prose">
+    <p>Teams now put large language models in their code review pipelines. The developer whose code is being checked also writes its comments, so a comment like "validated upstream, safe" becomes an attack. My experiments measure which of these comments work, why, and what removes the risk.</p>
+    <p>Across 780 trials, the strongest comments claimed authority over the code, and a bare statement of the author's confidence, which verifies nothing, worked nearly as well. Removing comments before analysis restored detection completely in the setting I tested.</p>
   </div>
-  <div>
-    <div class="demo" aria-label="Illustration of a comment injection attack on an AI code reviewer">
+  <div><div class="demo" aria-label="Illustration of a comment injection attack on an AI code reviewer">
 <pre id="code"><span class="k">def</span> get_user(db, user_id):
 <span id="cline"></span>    query = <span class="s">f"SELECT * FROM users WHERE id = {user_id}"</span>
     <span class="k">return</span> db.execute(query)</pre>
@@ -36,20 +43,17 @@
         <div class="track"><div id="fill" class="fill"></div></div>
       </div>
     </div>
-    <p class="cap">Illustration of the attack and the defense measured in my Cyber-AI 2026 papers. The code never changes; only the comment does.</p>
+    <p class="cap">Illustration of the attack and the defense measured in my Cyber-AI 2026 papers. The code never changes; only the comment does.</p></div></div>
+  <h3>At a glance</h3>
+  <div class="figs">
+    <figure><a href="infographics/crypto_cheatsheet.png"><img src="infographics/crypto_cheatsheet.png" alt="Per-class detection and false-alarm rates of 7 open code models on nine cryptographic API misuse classes, from CryptoBench" loading="lazy"></a>
+      <figcaption>Nine crypto bugs open code models get wrong, from CryptoBench. <a href="https://doi.org/10.5281/zenodo.23113861">preprint</a></figcaption></figure>
+    <figure><a href="infographics/comment_injection.png"><img src="infographics/comment_injection.png" alt="A misleading comment drops LLM vulnerability detection from 90 percent to 75.2 percent; stripping comments restores it to 90 percent" loading="lazy"></a>
+      <figcaption>One misleading comment cuts detection; stripping comments restores it. <a href="papers/analyze-the-code-not-the-comments.html">paper</a></figcaption></figure>
   </div>
-</header>
-</div></div>
-<div class="wrap">
-<main>
-<section class="cols"><h2>Research</h2>
-  <div class="prose">
-    <p>Teams now put large language models in their code review pipelines. The developer whose code is being checked also writes its comments, so a comment like "validated upstream, safe" becomes an attack. My experiments measure which of these comments work, why, and what removes the risk.</p>
-    <p>Across 780 trials, the strongest comments claimed authority over the code, and a bare statement of the author's confidence, which verifies nothing, worked nearly as well. Removing comments before analysis restored detection completely in the setting I tested.</p>
-  </div>
-</section>
 
-<section class="cols stack"><h2>Papers</h2>
+</section>
+<section class="page" id="papers" data-page><h2>Papers</h2>
   <ul class="pubs">
     <li class="live"><span class="tag">IEEE Cyber-AI 2026</span><a class="t" href="papers/not-all-adversarial-comments.html">Not All Adversarial Comments Are Equal: A Ranked Empirical Study of Twelve Comment Injection Attacks Against LLM-Based Code Vulnerability Detection</a>
       <span class="v">2nd IEEE International Conference on Cyber-AI, Bucharest, September 2026. To appear in IEEE Xplore.</span>
@@ -70,24 +74,7 @@
       <span class="l"><a href="papers/Chokshi_DoesIndirectionHurt_v9.pdf">PDF</a>, <a href="https://doi.org/10.5281/zenodo.23351769">Zenodo</a></span></li>
   </ul>
 </section>
-
-<section class="cols"><h2>Data and code</h2>
-  <ul class="plain">
-    <li><b>CryptoBench</b>, a benchmark of cryptographic API misuse for testing AI code reviewers: 54 Python snippets across 9 misuse classes. <a href="https://doi.org/10.5281/zenodo.23067052">Zenodo</a>, <a href="https://github.com/sunny-chokshi/cryptobench">GitHub</a></li>
-    <li><b>CommentInject</b>, the adversarial comment test cases behind my Cyber-AI papers. <a href="https://doi.org/10.5281/zenodo.23088528">Zenodo</a></li>
-  </ul>
-</section>
-
-<section class="cols"><h2>At a glance</h2>
-  <div class="figs">
-    <figure><a href="infographics/crypto_cheatsheet.png"><img src="infographics/crypto_cheatsheet.png" alt="Per-class detection and false-alarm rates of 7 open code models on nine cryptographic API misuse classes, from CryptoBench" loading="lazy"></a>
-      <figcaption>Nine crypto bugs open code models get wrong, from CryptoBench. <a href="https://doi.org/10.5281/zenodo.23113861">preprint</a></figcaption></figure>
-    <figure><a href="infographics/comment_injection.png"><img src="infographics/comment_injection.png" alt="A misleading comment drops LLM vulnerability detection from 90 percent to 75.2 percent; stripping comments restores it to 90 percent" loading="lazy"></a>
-      <figcaption>One misleading comment cuts detection; stripping comments restores it. <a href="papers/analyze-the-code-not-the-comments.html">paper</a></figcaption></figure>
-  </div>
-</section>
-
-<section class="cols"><h2>Peer review and service</h2>
+<section class="page" id="service" data-page><h2>Peer review and service</h2>
   <div class="svcs">
     <div class="svc"><div class="logo" data-ph="TDSC"><img src="img/logos/ieee-tdsc.svg" alt="" loading="lazy" onerror="this.remove()"></div>
       <div class="svt"><strong>Peer reviewer</strong><span>IEEE Transactions on Dependable and Secure Computing</span><span>3 manuscripts, 2026</span></div></div>
@@ -101,10 +88,19 @@
       <div class="svt"><strong>Member</strong><span>IEEE Boston Section</span></div></div>
   </div>
 </section>
+<section class="page" id="data" data-page><h2>Data and code</h2>
+  <ul class="plain">
+    <li><b>CryptoBench</b>, a benchmark of cryptographic API misuse for testing AI code reviewers: 54 Python snippets across 9 misuse classes. <a href="https://doi.org/10.5281/zenodo.23067052">Zenodo</a>, <a href="https://github.com/sunny-chokshi/cryptobench">GitHub</a></li>
+    <li><b>CommentInject</b>, the adversarial comment test cases behind my Cyber-AI papers. <a href="https://doi.org/10.5281/zenodo.23088528">Zenodo</a></li>
+  </ul>
+</section>
+<section class="page" id="contact" data-page><h2>Contact</h2>
+  <p class="prose">The best way to reach me is email. I read everything and reply in writing.</p>
+  <div class="links"><a class="btn" href="mailto:emailchokshi@gmail.com">Email</a><a class="btn ghost" href="https://orcid.org/0009-0003-4738-7759">ORCID</a><a class="btn ghost" href="https://www.linkedin.com/in/sunnychokshi">LinkedIn</a><a class="btn ghost" href="https://github.com/sunny-chokshi">GitHub</a></div>
+</section>
 </main>
-
-<footer><p>Paper PDFs are accepted author versions. &copy; 2026 IEEE. Personal use of this material is permitted. Permission from IEEE must be obtained for all other uses. Final versions will appear in IEEE Xplore.</p></footer>
-</div>
+<div class="pager"><button id="prev" aria-label="Previous page">&#8249;</button><button id="next" aria-label="Next page">&#8250;</button></div>
+<footer class="foot"><p>Paper PDFs are accepted author versions. &copy; 2026 IEEE. Personal use of this material is permitted. Permission from IEEE must be obtained for all other uses. Final versions will appear in IEEE Xplore.</p></footer>
 <script>
 (function(){
   var cline=document.getElementById('cline'),badge=document.getElementById('badge'),note=document.getElementById('note'),btn=document.getElementById('toggle');
@@ -120,6 +116,19 @@
     else{render(text.length);fooled();}
   });
   if(reduce){render(text.length);fooled();}else{setTimeout(type,1400);}
+})();
+</script>
+<script>
+(function(){
+ var pages=[].slice.call(document.querySelectorAll('[data-page]')),links=[].slice.call(document.querySelectorAll('.side nav a')),ids=pages.map(function(p){return p.id});
+ document.documentElement.className+=' js';
+ function go(){var id=location.hash.slice(1);if(ids.indexOf(id)<0)id='home';
+  pages.forEach(function(p){p.classList.toggle('on',p.id===id)});
+  links.forEach(function(a){if(a.dataset.p===id)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current')});
+  document.body.dataset.page=id;window.scrollTo(0,0);}
+ function step(d){var i=ids.indexOf(document.body.dataset.page);location.hash=ids[(i+d+ids.length)%ids.length];}
+ document.getElementById('prev').onclick=function(){step(-1)};document.getElementById('next').onclick=function(){step(1)};
+ window.addEventListener('hashchange',go);go();
 })();
 </script>
 </body></html>
