@@ -17,6 +17,7 @@
 <p class="v">Sunny Chokshi. October 28, 2026.</p>
 <p><img src="../img/blog-hex-key-size.png" alt="0xC00 equals a 3072-bit key. Secure, yet it drew false alarms. Minus 4.5 points balanced accuracy, plus 9.1 points false positives, 16 models, 90 snippet pairs." width="1200" height="627" style="max-width:100%;height:auto"></p>
 <p>I wanted to know whether an LLM code reviewer follows what the code does or what the code looks like. Cryptographic API misuse is a clean place to ask, because the same insecure choice can be written in many ways.</p>
+<p class="getdata"><a class="gd1" href="https://doi.org/10.5281/zenodo.23351769">Get the preprint on Zenodo</a><a class="gd2" href="https://doi.org/10.5281/zenodo.23067051">CryptoBench dataset on Zenodo</a></p>
 <h2>The setup</h2>
 <p>I used 90 pairs of Python snippets across nine misuse classes. Each pair holds a vulnerable snippet and a secure twin. For 80 pairs I wrote a plain form, with the misuse at the call site under its familiar name, and an indirect form that reaches the same choice through an alias, constant, default, or configuration value. I ran 16 open models.</p>
 <p>The secure twins already showed a problem. Two models flag nearly every snippet, and four more flag over 70% of secure code. A reviewer that flags nearly everything tells me little about the code.</p>

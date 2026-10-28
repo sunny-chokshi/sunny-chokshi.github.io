@@ -32,3 +32,11 @@ a{color:#1d62c4}
 .ctags span{font-size:.74rem;font-weight:600;padding:3px 10px;border-radius:999px;background:rgba(25,181,216,.14);color:#1d62c4}
 .ctags span::before{content:"#";opacity:.6;margin-right:2px}
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .ctags span{color:#7db3ff}}
+
+/* Zenodo buttons near the top of each post */
+.getdata{display:flex;flex-wrap:wrap;gap:10px;margin:18px 0 26px}
+.getdata a{display:inline-block;padding:10px 20px;border-radius:999px;font-weight:700;font-size:.92rem;text-decoration:none;border:2px solid var(--accent)}
+.getdata .gd1{background:var(--accent);color:#fff}
+.getdata .gd2{background:transparent;color:#1d62c4}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .getdata .gd2{color:#7db3ff}}
+.getdata a:hover{filter:brightness(.92)}

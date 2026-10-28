@@ -17,6 +17,7 @@
 <p class="v">Sunny Chokshi. October 28, 2026.</p>
 <p><img src="../img/blog-reviewer-flags-everything.png" alt="100% detection rate can tell you little. qwen2.5-coder 0.5B flagged 540 of 540 snippets, balanced accuracy 0.500. gpt-oss 20B reached 0.952." width="1200" height="627" style="max-width:100%;height:auto"></p>
 <p>When I tested 16 open LLM code reviewers, the first table in my paper showed which of them separate secure code from vulnerable code at all. It is worth reading on its own.</p>
+<p class="getdata"><a class="gd1" href="https://doi.org/10.5281/zenodo.23351769">Get the preprint on Zenodo</a><a class="gd2" href="https://doi.org/10.5281/zenodo.23067051">CryptoBench dataset on Zenodo</a></p>
 <h2>The setup</h2>
 <p>I used 180 Python snippets across nine cryptographic misuse classes, ten pairs per class. Each pair has a vulnerable snippet and a secure twin that does the same task correctly. I ran 16 open models, from 0.5B to 120B parameters, with three repeats per snippet, which gives 8,640 scored calls. For each model I report the true positive rate (TPR, vulnerable snippets flagged), the false positive rate (FPR, secure twins flagged), and balanced accuracy, the average of TPR and one minus FPR. A model that flags everything scores 0.5.</p>
 <h2>Why detection rate misleads</h2>
