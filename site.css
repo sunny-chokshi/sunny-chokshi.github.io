@@ -95,3 +95,66 @@ p.note{color:var(--muted);font-size:.8rem;margin-top:28px}
 .soc{width:52px;height:52px;border:2px solid var(--accent);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--accent-ink);background:var(--panel);transition:background .2s,color .2s}
 .soc svg{width:30px;height:30px}
 .soc:hover,.soc:focus-visible{background:var(--accent);color:#fff}
+
+/* v4: own look. dark rail, left-aligned hero, network backdrop, per-page transitions */
+:root{--paper:#f2f6fc;--panel:#fff;--ink:#14213d;--muted:#5b6784;--line:#dfe6f2;--accent:#2f80ed;--accent2:#19b5d8;--rail:#0e1a33}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--paper:#0b1220;--panel:#121b2e;--ink:#e8eefb;--muted:#9fb0cf;--line:#223049}}
+body{font-family:"Manrope",system-ui,sans-serif;font-size:16.5px}
+.side{background:var(--rail);border-right:0;width:92px}
+:root{--side:92px}
+.av{border-radius:50%;background:linear-gradient(135deg,var(--accent),var(--accent2))}
+.nm{color:#cfe0ff;font-weight:600;font-size:.85rem}
+.side nav{border-top:1px solid rgba(255,255,255,.1)}
+.side nav a{color:#b8c7e6;border-bottom:1px solid rgba(255,255,255,.07);font-size:.68rem;letter-spacing:.02em}
+.side nav svg{color:#6fb0ff}
+.side nav a:hover{background:rgba(255,255,255,.06)}
+.side nav a[aria-current]{color:#fff;background:rgba(47,128,237,.22);border-left-color:var(--accent2)}
+main>.page>h2{font-weight:800;font-size:2.1rem;padding:0 0 0 16px;margin-bottom:30px;border-left:5px solid var(--accent)}
+main>.page>h2::after{display:none}
+main h3{font-weight:800}
+.btn{border-radius:999px;background:linear-gradient(135deg,var(--accent),var(--accent2));border:0;padding:13px 28px}
+.btn.ghost{background:transparent;border:2px solid var(--accent);color:var(--accent-ink)}
+.pubs li,.svc{border-radius:16px;border:1px solid var(--line);box-shadow:0 10px 30px -18px rgba(20,33,61,.35)}
+.pubs li.live{border-top:1px solid var(--line);border-left:4px solid var(--accent)}
+.demo{border-radius:16px}
+.pager button{border-radius:50%}
+.cform input,.cform textarea{border-radius:10px}
+/* hero */
+#home,#home.pt-page-current{text-align:left;justify-content:flex-start}
+#home .hero,main>#home>.hero{max-width:720px;margin:0 0 0 clamp(0px,6vw,90px)}
+#home h1{font-weight:800;background:linear-gradient(100deg,var(--accent),var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-fill-color:transparent}
+#home .thesis{margin:0 0 28px;max-width:36ch}
+.bgshapes{fill:none}
+.bgshapes .ln line{stroke:rgba(47,128,237,.16);stroke-width:1.2}
+.bgshapes .dt circle{fill:rgba(25,181,216,.28)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .bgshapes{fill:none}}
+/* social */
+.socs{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.soc{width:auto;height:auto;border:1px solid var(--line);border-radius:14px;justify-content:flex-start;gap:12px;padding:10px 14px;background:var(--panel);color:var(--ink);text-decoration:none}
+.soc .sb{flex:none;width:40px;height:40px;border-radius:10px;background:var(--c);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:.95rem}
+.soc .sn{font-weight:700}
+.soc:hover,.soc:focus-visible{background:var(--panel);color:var(--ink);border-color:var(--c);transform:translateY(-2px)}
+/* per-page transitions: the incoming page picks its own */
+main>.page[class*="pt-in-"],main>.page[class*="pt-out-"]{animation-duration:.7s;animation-fill-mode:both;animation-timing-function:cubic-bezier(.22,.8,.3,1)}
+.pt-in-home{animation-name:inHome!important}.pt-out-home{animation-name:outHome!important}
+.pt-in-research{animation-name:inRight!important}.pt-out-research{animation-name:outLeft!important}
+.pt-in-papers{transform-origin:0 50%;animation-name:inFlip!important}.pt-out-papers{transform-origin:100% 50%;animation-name:outFlip!important}
+.pt-in-service{animation-name:inZoom!important}.pt-out-service{animation-name:outZoom!important}
+.pt-in-data{animation-name:inRise!important}.pt-out-data{animation-name:outSink!important}
+.pt-in-contact{transform-origin:50% 0;animation-name:inFold!important}.pt-out-contact{transform-origin:50% 100%;animation-name:outFold!important}
+@keyframes inHome{from{opacity:0;transform:scale(.92)}to{opacity:1;transform:none}}
+@keyframes outHome{to{opacity:0;transform:scale(1.04)}}
+@keyframes inRight{from{transform:translateX(100%)}to{transform:none}}
+@keyframes outLeft{to{transform:translateX(-35%);opacity:.2}}
+@keyframes inFlip{from{opacity:0;transform:rotateY(-80deg)}to{opacity:1;transform:none}}
+@keyframes outFlip{to{opacity:0;transform:rotateY(80deg)}}
+@keyframes inZoom{from{opacity:0;transform:scale(1.35)}to{opacity:1;transform:none}}
+@keyframes outZoom{to{opacity:0;transform:scale(.7)}}
+@keyframes inRise{from{transform:translateY(100%)}to{transform:none}}
+@keyframes outSink{to{transform:translateY(25%);opacity:.2}}
+@keyframes inFold{from{opacity:0;transform:rotateX(-85deg)}to{opacity:1;transform:none}}
+@keyframes outFold{to{opacity:0;transform:rotateX(85deg)}}
+@media(max-width:640px){.socs{grid-template-columns:1fr}:root{--side:0px}.side{width:auto}#home .hero,main>#home>.hero{margin:0}}
+.cform button.btn{border-radius:999px;border:0}
+.bgshapes .ln line{stroke:rgba(47,128,237,.10)}
+.bgshapes .dt circle{fill:rgba(25,181,216,.18)}
