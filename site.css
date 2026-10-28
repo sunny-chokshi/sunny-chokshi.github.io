@@ -85,3 +85,13 @@ html:not(.js) main>.page{display:block;position:relative}
 p.note{color:var(--muted);font-size:.8rem;margin-top:28px}
 @media(max-width:640px){main{left:0;top:62px}}
 #home{text-align:center}main>#home>.hero{max-width:640px;margin:0 auto}main>#home>.bgshapes{max-width:none;margin:0}
+
+.cform{align-items:start}
+.cform label{display:block;margin:0 0 16px;font-weight:700;font-size:.9rem}
+.cform input,.cform textarea{display:block;width:100%;margin-top:6px;padding:12px 14px;border:1px solid var(--line);border-radius:3px;background:var(--panel);color:var(--ink);font:inherit;font-weight:400}
+.cform input:focus,.cform textarea:focus{outline:2px solid var(--accent);border-color:var(--accent)}
+.cform button{border-radius:2px;cursor:pointer;font:inherit;font-weight:700;margin:4px 0 0}
+.socs{display:flex;flex-wrap:wrap;gap:12px;margin:0 0 24px}
+.soc{width:52px;height:52px;border:2px solid var(--accent);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--accent-ink);background:var(--panel);transition:background .2s,color .2s}
+.soc svg{width:30px;height:30px}
+.soc:hover,.soc:focus-visible{background:var(--accent);color:#fff}
