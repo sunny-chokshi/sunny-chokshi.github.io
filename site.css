@@ -188,3 +188,6 @@ main>#home>.hero{flex:0 1 520px;margin-left:clamp(0px,3vw,48px)}
 @media(max-width:1000px){#home.pt-page-current{flex-direction:column;align-items:flex-start;justify-content:center}.homeside{width:100%;max-width:none}.stats.big.four{grid-template-columns:1fr 1fr}}
 @media(max-width:640px){.stats.big,.stats.big.four{grid-template-columns:1fr}}
 .stats.big .stat b{font-size:1.6rem;white-space:nowrap}
+
+.av{width:72px;height:72px;margin-top:16px;padding:0;background:none;border:3px solid var(--accent2);overflow:hidden;box-shadow:0 0 0 4px rgba(25,181,216,.18)}
+.av img{width:100%;height:100%;object-fit:cover;display:block;border-radius:50%}
