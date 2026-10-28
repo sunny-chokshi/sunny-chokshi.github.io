@@ -68,6 +68,10 @@
       <span class="l"><a href="papers/Chokshi_CyberAI2026_Analyze_the_Code_Not_the_Comments.pdf">PDF</a></span></li>
     <li><span class="tag acc">IEEE ICon INDIA 2026</span><span class="t">Adversarial Comments That Defeat a Robust Model Transfer to Weaker Ones: An Asymmetric Transferability Study of Comment Injection Against LLM-Based Code Vulnerability Detection</span>
       <span class="v">IEEE ICon INDIA 2026, November 2026. Accepted.</span></li>
+    <li><span class="tag acc">ICAICCIT 2026</span><span class="t">Telling the Model to Distrust Comments Can Backfire: A Cautionary Study of Prompt-Based Defenses Against Adversarial Comment Injection in LLM-Based Code Vulnerability Detection</span>
+      <span class="v">4th International Conference on Advances in Computation, Communication and Information Technology (ICAICCIT 2026), November 2026. Accepted.</span></li>
+    <li><span class="tag acc">IEEE ICCA 2026</span><span class="t">Are LLM Application Repositories Worse at Container Hygiene? A Matched Study of Dockerfiles and Compose Files</span>
+      <span class="v">IEEE ICCA 2026. Accepted.</span></li>
     <li><span class="tag pre">Preprint</span><span class="t">Known-Bad Names, Unknown-Bad Uses: What Local Code Models Detect When They Review Cryptographic API Misuse</span>
       <span class="v">Preprint, Zenodo, October 2026.</span>
       <span class="l"><a href="https://doi.org/10.5281/zenodo.23113861">Preprint</a></span></li>
@@ -107,10 +111,16 @@
     <div class="stats"><div class="stat"><b>30</b><span>vulnerable functions</span></div><div class="stat"><b>14</b><span>CWE categories</span></div><div class="stat"><b>12</b><span>comment strategies</span></div><div class="stat"><b>3,360</b><span>recorded trials</span></div></div>
     <p class="mut">Four local code models, four studies, strategies grouped in four families.</p>
     <p class="acts"><a class="btn" href="https://doi.org/10.5281/zenodo.23088528">Zenodo</a></p></article>
+   <article class="ds"><span class="tag">Dataset &middot; CC BY 4.0</span>
+    <h3>Detection Rate Is the Wrong Metric: replication package</h3>
+    <p>Verdict logs, scripts and checks for a matched safe-code control on adversarial comment injection. Every logged call is included, so the paper's tables can be recomputed.</p>
+    <div class="stats"><div class="stat"><b>10,580</b><span>model calls used in the paper</span></div><div class="stat"><b>5</b><span>Qwen2.5-Coder sizes</span></div></div>
+    <p class="mut">Code is MIT licensed. The Devign function text is not redistributed; the loaders rebuild the sets.</p>
+    <p class="acts"><a class="btn" href="https://doi.org/10.5281/zenodo.23746070">Zenodo</a></p></article>
   </div>
   <div class="dsnote"><h3>Reproduce the numbers</h3>
-   <p>Both releases include the test harness and an analysis script. The script recomputes the headline rates with Wilson 95% confidence intervals. Models run locally through Ollama at temperature 0, so anyone can repeat the runs.</p>
-   <p class="mut">Cite with the DOI: CryptoBench 10.5281/zenodo.23067052, CommentInject 10.5281/zenodo.23088528.</p></div>
+   <p>The releases include the test harness and an analysis script. The script recomputes the headline rates with Wilson 95% confidence intervals. Models run locally through Ollama at temperature 0, so anyone can repeat the runs.</p>
+   <p class="mut">Cite with the DOI: CryptoBench 10.5281/zenodo.23067052, CommentInject 10.5281/zenodo.23088528, replication package 10.5281/zenodo.23746070.</p></div>
 </section>
 <section class="page" id="blog" data-page><h2>Blog</h2>
   <p class="prose">I am a PhD student testing how well open LLMs review code for security bugs. Each post covers one result from my own experiments, such as why a model that flags every snippet looks best on detection rate, or how a hex key size set off false alarms. Every post links to the preprint and dataset on Zenodo, so you can check the numbers and reuse the data.</p>
