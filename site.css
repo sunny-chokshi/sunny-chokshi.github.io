@@ -158,3 +158,19 @@ main>.page[class*="pt-in-"],main>.page[class*="pt-out-"]{animation-duration:.7s;
 .cform button.btn{border-radius:999px;border:0}
 .bgshapes .ln line{stroke:rgba(47,128,237,.10)}
 .bgshapes .dt circle{fill:rgba(25,181,216,.18)}
+
+.dsgrid{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.ds{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:28px;box-shadow:0 10px 30px -18px rgba(20,33,61,.35);border-top:4px solid var(--accent)}
+.ds h3{margin:8px 0 10px;font-size:1.6rem}
+.ds p{margin:0 0 16px}
+.ds .tag{display:inline-block;font-size:.78rem;font-weight:700;padding:3px 12px;border-radius:99px;background:rgba(47,128,237,.12);color:var(--accent-ink)}
+.ds .tag.pre{background:rgba(25,181,216,.16)}
+.stats{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:18px 0}
+.stat{background:var(--paper);border-radius:12px;padding:14px 16px}
+.stat b{display:block;font-size:1.5rem;font-weight:800;background:linear-gradient(100deg,var(--accent),var(--accent2));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.stat span{font-size:.85rem;color:var(--muted)}
+.mut{color:var(--muted);font-size:.9rem}
+.acts{margin:6px -6px 0!important}
+.dsnote{margin-top:22px;border:1px dashed var(--accent);border-radius:16px;padding:24px 28px;background:linear-gradient(135deg,rgba(47,128,237,.06),rgba(25,181,216,.06))}
+.dsnote h3{margin:0 0 8px}.dsnote p{margin:0 0 8px;max-width:75ch}
+@media(max-width:900px){.dsgrid{grid-template-columns:1fr}}

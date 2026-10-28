@@ -90,10 +90,23 @@
   </div>
 </section>
 <section class="page" id="data" data-page><h2>Datasets and code</h2>
-  <ul class="plain">
-    <li><b>CryptoBench</b>, a benchmark of cryptographic API misuse for testing AI code reviewers: 54 Python snippets across 9 misuse classes. <a href="https://doi.org/10.5281/zenodo.23067052">Zenodo</a>, <a href="https://github.com/sunny-chokshi/cryptobench">GitHub</a></li>
-    <li><b>CommentInject</b>, the adversarial comment test cases behind my Cyber-AI papers. <a href="https://doi.org/10.5281/zenodo.23088528">Zenodo</a></li>
-  </ul>
+  <div class="dsgrid">
+   <article class="ds"><span class="tag pre">Dataset &middot; CC BY 4.0</span>
+    <h3>CryptoBench</h3>
+    <p>A benchmark of cryptographic API misuse for testing AI code reviewers. Each vulnerable Python snippet has a matching secure control, so a model that flags everything gets caught.</p>
+    <div class="stats"><div class="stat"><b>54</b><span>Python snippets</span></div><div class="stat"><b>9</b><span>misuse classes</span></div><div class="stat"><b>36 + 18</b><span>vulnerable and secure</span></div><div class="stat"><b>1,890</b><span>recorded trials</span></div></div>
+    <p class="mut">Tested on 7 open code models, from 0.5B to 14B parameters.</p>
+    <p class="acts"><a class="btn" href="https://doi.org/10.5281/zenodo.23067052">Zenodo</a><a class="btn ghost" href="https://github.com/sunny-chokshi/cryptobench">GitHub</a></p></article>
+   <article class="ds"><span class="tag">Dataset &middot; CC BY 4.0</span>
+    <h3>CommentInject</h3>
+    <p>The adversarial comment test cases behind my Cyber-AI papers. One misleading comment is added to vulnerable code, and the benchmark records whether a model still reports the bug.</p>
+    <div class="stats"><div class="stat"><b>30</b><span>vulnerable functions</span></div><div class="stat"><b>14</b><span>CWE categories</span></div><div class="stat"><b>12</b><span>comment strategies</span></div><div class="stat"><b>3,360</b><span>recorded trials</span></div></div>
+    <p class="mut">Four local code models, four studies, strategies grouped in four families.</p>
+    <p class="acts"><a class="btn" href="https://doi.org/10.5281/zenodo.23088528">Zenodo</a></p></article>
+  </div>
+  <div class="dsnote"><h3>Reproduce the numbers</h3>
+   <p>Both releases include the test harness and an analysis script. The script recomputes the headline rates with Wilson 95% confidence intervals. Models run locally through Ollama at temperature 0, so anyone can repeat the runs.</p>
+   <p class="mut">Cite with the DOI: CryptoBench 10.5281/zenodo.23067052, CommentInject 10.5281/zenodo.23088528.</p></div>
 </section>
 <section class="page" id="contact" data-page><h2>Contact</h2>
   <div class="two cform">
