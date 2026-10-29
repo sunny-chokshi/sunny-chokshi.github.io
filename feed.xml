@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+<title>Sunny Chokshi, LLM security notes</title>
+<link>https://sunny-chokshi.github.io/blog/</link>
+<description>Short notes on my own LLM security experiments, with numbers and links to the open data.</description>
+<language>en</language>
+<lastBuildDate>Wed, 28 Oct 2026 00:00:00 +0000</lastBuildDate>
+<atom:link href="https://sunny-chokshi.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+<item>
+<title>A hex literal made LLM code reviewers raise false alarms</title>
+<link>https://sunny-chokshi.github.io/blog/hex-key-size-false-alarms.html</link>
+<guid isPermaLink="true">https://sunny-chokshi.github.io/blog/hex-key-size-false-alarms.html</guid>
+<pubDate>Wed, 28 Oct 2026 00:00:00 +0000</pubDate>
+<description>A secure 3072-bit key written as 0xC00 drew false alarms from LLM code reviewers. Results from 16 open models on 90 snippet pairs.</description>
+</item>
+<item>
+<title>Detection rate alone ranks the worst LLM code reviewers first</title>
+<link>https://sunny-chokshi.github.io/blog/reviewer-that-flags-everything.html</link>
+<guid isPermaLink="true">https://sunny-chokshi.github.io/blog/reviewer-that-flags-everything.html</guid>
+<pubDate>Wed, 28 Oct 2026 00:00:00 +0000</pubDate>
+<description>Ranked by detection rate alone, LLM code reviewers that flag every snippet look best. Secure twins change the ranking. 16 models, 180 snippets.</description>
+</item>
+</channel>
+</rss>
