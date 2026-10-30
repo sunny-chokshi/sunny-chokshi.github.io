@@ -5,8 +5,15 @@
 <link>https://sunny-chokshi.github.io/blog/</link>
 <description>Short notes on my own LLM security experiments, with numbers and links to the open data.</description>
 <language>en</language>
-<lastBuildDate>Wed, 28 Oct 2026 00:00:00 +0000</lastBuildDate>
+<lastBuildDate>Fri, 30 Oct 2026 00:00:00 +0000</lastBuildDate>
 <atom:link href="https://sunny-chokshi.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+<item>
+<title>CryptoBench: 54 snippets to test LLM crypto misuse detection</title>
+<link>https://sunny-chokshi.github.io/blog/cryptobench-what-is-inside.html</link>
+<guid isPermaLink="true">https://sunny-chokshi.github.io/blog/cryptobench-what-is-inside.html</guid>
+<pubDate>Fri, 30 Oct 2026 00:00:00 +0000</pubDate>
+<description>CryptoBench has 54 Python snippets, nine misuse classes and 1,890 recorded trials from 7 local models. What is inside and how to rerun it.</description>
+</item>
 <item>
 <title>A hex literal made LLM code reviewers raise false alarms</title>
 <link>https://sunny-chokshi.github.io/blog/hex-key-size-false-alarms.html</link>
