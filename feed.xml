@@ -5,8 +5,15 @@
 <link>https://sunny-chokshi.github.io/blog/</link>
 <description>Short notes on my own LLM security experiments, with numbers and links to the open data.</description>
 <language>en</language>
-<lastBuildDate>Fri, 30 Oct 2026 00:00:00 +0000</lastBuildDate>
+<lastBuildDate>Mon, 02 Nov 2026 00:00:00 +0000</lastBuildDate>
 <atom:link href="https://sunny-chokshi.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+<item>
+<title>LLM weak random number generator detection test</title>
+<link>https://sunny-chokshi.github.io/blog/llm-weak-random-number-generator-detection.html</link>
+<guid isPermaLink="true">https://sunny-chokshi.github.io/blog/llm-weak-random-number-generator-detection.html</guid>
+<pubDate>Mon, 02 Nov 2026 00:00:00 +0000</pubDate>
+<description>Four Python snippets, one weak random number generator bug. Three local LLMs flagged them 15, 7, 1 and 0 times out of 15. Data on Zenodo.</description>
+</item>
 <item>
 <title>CryptoBench: 54 snippets to test LLM crypto misuse detection</title>
 <link>https://sunny-chokshi.github.io/blog/cryptobench-what-is-inside.html</link>
