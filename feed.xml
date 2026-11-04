@@ -5,8 +5,15 @@
 <link>https://sunny-chokshi.github.io/blog/</link>
 <description>Short notes on my own LLM security experiments, with numbers and links to the open data.</description>
 <language>en</language>
-<lastBuildDate>Mon, 02 Nov 2026 00:00:00 +0000</lastBuildDate>
+<lastBuildDate>Wed, 04 Nov 2026 00:00:00 +0000</lastBuildDate>
 <atom:link href="https://sunny-chokshi.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+<item>
+<title>Adversarial code comments dataset for LLM reviewers</title>
+<link>https://sunny-chokshi.github.io/blog/adversarial-code-comments-dataset.html</link>
+<guid isPermaLink="true">https://sunny-chokshi.github.io/blog/adversarial-code-comments-dataset.html</guid>
+<pubDate>Wed, 04 Nov 2026 00:00:00 +0000</pubDate>
+<description>Adversarial code comments dataset: 30 vulnerable Python functions, 12 comment strategies, 3,360 recorded trials on four local code models.</description>
+</item>
 <item>
 <title>LLM weak random number generator detection test</title>
 <link>https://sunny-chokshi.github.io/blog/llm-weak-random-number-generator-detection.html</link>
