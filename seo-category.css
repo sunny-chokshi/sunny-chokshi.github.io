@@ -1,13 +1,14 @@
 .seo-category-links{display:flex;justify-content:center;gap:20px;flex-wrap:wrap;padding:18px 24px;border-top:1px solid #dfe6f2;font-size:.82rem}
 .seo-category-links a{color:#075ce5;font-weight:700}
-.site-nav nav a:not(:has(svg))::before{font-size:16px;line-height:1;color:#51627e}
-.site-nav nav a[href$="index.html"]::before{content:"⌂"}
-.site-nav nav a[href$="research.html"]::before{content:"⌕"}
-.site-nav nav a[href$="publications.html"]::before{content:"▤"}
-.site-nav nav a[href$="reviewing.html"]::before{content:"◇"}
-.site-nav nav a[href$="datasets.html"]::before{content:"◉"}
-.site-nav nav a[href$="blog.html"]::before{content:"▧"}
-.site-nav nav a[href$="projects.html"]::before{content:"⬡"}
-.site-nav nav a[href$="presentations.html"]::before{content:"▣"}
-.site-nav nav a[href$="contact.html"]::before{content:"✉"}
+.site-nav nav a:not(:has(svg))::before{content:"";display:block;width:20px;height:20px;background:#51627e;-webkit-mask:var(--ic) center/contain no-repeat;mask:var(--ic) center/contain no-repeat}
+.site-nav nav a[aria-current="page"]:not(:has(svg))::before{background:#075ce5}
+.site-nav nav a[href$="index.html"]{--ic:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22 fill=%22none%22 stroke=%22%23000%22 stroke-width=%221.6%22 stroke-linejoin=%22round%22%3E%3Cpath d=%22M3 11 12 3l9 8v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z%22/%3E%3C/svg%3E")}
+.site-nav nav a[href$="research.html"]{--ic:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22 fill=%22none%22 stroke=%22%23000%22 stroke-width=%221.6%22 stroke-linejoin=%22round%22%3E%3Cpath d=%22M10 3a7 7 0 1 0 4.2 12.6l5.1 5.1 1.4-1.4-5.1-5.1A7 7 0 0 0 10 3z%22/%3E%3C/svg%3E")}
+.site-nav nav a[href$="publications.html"]{--ic:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22 fill=%22none%22 stroke=%22%23000%22 stroke-width=%221.6%22 stroke-linejoin=%22round%22%3E%3Cpath d=%22M6 2h9l5 5v15H6zM14 3.5V8h4.5%22/%3E%3C/svg%3E")}
+.site-nav nav a[href$="reviewing.html"]{--ic:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22 fill=%22none%22 stroke=%22%23000%22 stroke-width=%221.6%22 stroke-linejoin=%22round%22%3E%3Cpath d=%22M12 2 3 6v6c0 5 3.8 8.7 9 10 5.2-1.3 9-5 9-10V6z%22/%3E%3C/svg%3E")}
+.site-nav nav a[href$="datasets.html"]{--ic:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22 fill=%22none%22 stroke=%22%23000%22 stroke-width=%221.6%22 stroke-linejoin=%22round%22%3E%3Cpath d=%22M12 3C7 3 4 4.6 4 6.5v11C4 19.4 7 21 12 21s8-1.6 8-3.5v-11C20 4.6 17 3 12 3zM4 6.5C4 8.4 7 10 12 10s8-1.6 8-3.5M4 12c0 1.9 3 3.5 8 3.5s8-1.6 8-3.5%22/%3E%3C/svg%3E")}
+.site-nav nav a[href$="blog.html"]{--ic:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22 fill=%22none%22 stroke=%22%23000%22 stroke-width=%221.6%22 stroke-linejoin=%22round%22%3E%3Cpath d=%22M4 4h16v16H4zM8 9h8M8 13h8M8 17h5%22/%3E%3C/svg%3E")}
+.site-nav nav a[href$="projects.html"]{--ic:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22 fill=%22none%22 stroke=%22%23000%22 stroke-width=%221.6%22 stroke-linejoin=%22round%22%3E%3Cpath d=%22M4 7.5 12 3l8 4.5v9L12 21l-8-4.5zM4 7.5l8 4.7 8-4.7M12 12.2V21%22/%3E%3C/svg%3E")}
+.site-nav nav a[href$="presentations.html"]{--ic:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22 fill=%22none%22 stroke=%22%23000%22 stroke-width=%221.6%22 stroke-linejoin=%22round%22%3E%3Cpath d=%22M3 5h18v12H3zM8 21l4-4 4 4M12 17v-5m-4-3h8%22/%3E%3C/svg%3E")}
+.site-nav nav a[href$="contact.html"]{--ic:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22 fill=%22none%22 stroke=%22%23000%22 stroke-width=%221.6%22 stroke-linejoin=%22round%22%3E%3Cpath d=%22M3 5h18v14H3zM3.5 6.5 12 13l8.5-6.5%22/%3E%3C/svg%3E")}
 @media(max-width:820px){.seo-category-links{gap:12px;padding:14px}}
