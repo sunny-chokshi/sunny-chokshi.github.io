@@ -12,10 +12,8 @@ html body.pg main{margin-top:0!important}
 .crumbs li:not(:last-child){flex:none}
 body.pg main.seo-main{padding-top:26px}
 body.pg main.paper>.crumbs{margin-bottom:14px}
-.site-footer{margin-top:56px;padding:28px 0 14px;font-size:14px;line-height:1.7}
-.site-footer a{margin-right:18px}
 /* Talks and Projects: larger type and more air */
-body.xp main{padding-top:26px;padding-bottom:104px}
+body.xp main{max-width:1180px;padding:26px 28px 104px}
 .xp .kicker,.xp .label{font-size:12px}
 .xp .label{font-size:11px}
 .xp .intro{padding:8px 0 34px}
@@ -47,8 +45,7 @@ body.xp main{padding-top:26px;padding-bottom:104px}
 .xp .note p{font-size:18.5px;line-height:1.75;color:#4b5a74;max-width:780px;margin:0 0 30px}
 .xp .note>a{display:inline-block;font-size:16px;padding:14px 26px;border-radius:12px;background:#075ce5;border-color:#075ce5;color:#fff;box-shadow:0 12px 24px -14px #075ce5}
 .xp .note>a:hover{background:#0549b8}
-.xp footer{padding:34px clamp(20px,5vw,70px);font-size:14px}
-.xp footer div{gap:20px}
+@media(max-width:640px){body.xp main{padding-left:20px;padding-right:20px}}
 @media(max-width:760px){.xp .talk{grid-template-columns:60px 1fr;padding:24px;gap:18px}.xp .project{padding:24px}.xp .note{padding:32px 24px;margin-top:48px}.xp .note h2{font-size:26px}.xp .note p{font-size:17px}.xp .talk h2,.xp .project h2{font-size:23px}}
 /* html sitemap */
 .sm-grid{align-items:start;display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:26px;margin-top:14px}
