@@ -5,34 +5,42 @@
     <image:image><image:loc>https://sunny-chokshi.github.io/img/og-home.png</image:loc></image:image>
   </url>
   <url><loc>https://sunny-chokshi.github.io/research.html</loc>
+    <image:image><image:loc>https://sunny-chokshi.github.io/img/banners/research.jpg</image:loc><image:title>Research focus: security evaluation for AI code review</image:title></image:image>
     <image:image><image:loc>https://sunny-chokshi.github.io/img/profile.jpg</image:loc><image:title>Sunny Chokshi</image:title></image:image>
     <image:image><image:loc>https://sunny-chokshi.github.io/img/og-home.png</image:loc></image:image>
   </url>
   <url><loc>https://sunny-chokshi.github.io/publications.html</loc>
+    <image:image><image:loc>https://sunny-chokshi.github.io/img/banners/publications.jpg</image:loc><image:title>Publications: peer-reviewed papers on LLM security</image:title></image:image>
     <image:image><image:loc>https://sunny-chokshi.github.io/img/profile.jpg</image:loc><image:title>Sunny Chokshi</image:title></image:image>
     <image:image><image:loc>https://sunny-chokshi.github.io/img/og-home.png</image:loc></image:image>
   </url>
   <url><loc>https://sunny-chokshi.github.io/reviewing.html</loc>
+    <image:image><image:loc>https://sunny-chokshi.github.io/img/banners/reviewing.jpg</image:loc><image:title>Peer review and academic service in software security and AI</image:title></image:image>
     <image:image><image:loc>https://sunny-chokshi.github.io/img/profile.jpg</image:loc><image:title>Sunny Chokshi</image:title></image:image>
     <image:image><image:loc>https://sunny-chokshi.github.io/img/og-home.png</image:loc></image:image>
   </url>
   <url><loc>https://sunny-chokshi.github.io/datasets.html</loc>
+    <image:image><image:loc>https://sunny-chokshi.github.io/img/banners/datasets.jpg</image:loc><image:title>Open datasets and code for evaluating AI code review</image:title></image:image>
     <image:image><image:loc>https://sunny-chokshi.github.io/img/profile.jpg</image:loc><image:title>Sunny Chokshi</image:title></image:image>
     <image:image><image:loc>https://sunny-chokshi.github.io/img/og-home.png</image:loc></image:image>
   </url>
   <url><loc>https://sunny-chokshi.github.io/blog.html</loc>
+    <image:image><image:loc>https://sunny-chokshi.github.io/img/banners/blog.jpg</image:loc><image:title>Research notes from experiments on LLM code security review</image:title></image:image>
     <image:image><image:loc>https://sunny-chokshi.github.io/img/profile.jpg</image:loc><image:title>Sunny Chokshi</image:title></image:image>
     <image:image><image:loc>https://sunny-chokshi.github.io/img/og-home.png</image:loc></image:image>
   </url>
   <url><loc>https://sunny-chokshi.github.io/contact.html</loc>
+    <image:image><image:loc>https://sunny-chokshi.github.io/img/banners/contact.jpg</image:loc><image:title>Contact Sunny Chokshi about research, data and peer review</image:title></image:image>
     <image:image><image:loc>https://sunny-chokshi.github.io/img/profile.jpg</image:loc><image:title>Sunny Chokshi</image:title></image:image>
     <image:image><image:loc>https://sunny-chokshi.github.io/img/og-home.png</image:loc></image:image>
   </url>
   <url><loc>https://sunny-chokshi.github.io/projects.html</loc>
+    <image:image><image:loc>https://sunny-chokshi.github.io/img/banners/projects.jpg</image:loc><image:title>Research projects and tools for studying LLM code review</image:title></image:image>
     <image:image><image:loc>https://sunny-chokshi.github.io/img/profile.jpg</image:loc><image:title>Sunny Chokshi</image:title></image:image>
     <image:image><image:loc>https://sunny-chokshi.github.io/img/og-home.png</image:loc></image:image>
   </url>
   <url><loc>https://sunny-chokshi.github.io/presentations.html</loc>
+    <image:image><image:loc>https://sunny-chokshi.github.io/img/banners/presentations.jpg</image:loc><image:title>Conference presentations at IEEE Cyber-AI 2026</image:title></image:image>
     <image:image><image:loc>https://sunny-chokshi.github.io/img/profile.jpg</image:loc><image:title>Sunny Chokshi</image:title></image:image>
     <image:image><image:loc>https://sunny-chokshi.github.io/img/og-home.png</image:loc></image:image>
   </url>
