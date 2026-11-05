@@ -2,12 +2,62 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url><loc>https://sunny-chokshi.github.io/</loc>
     <image:image><image:loc>https://sunny-chokshi.github.io/img/profile.jpg</image:loc><image:title>Sunny Chokshi</image:title></image:image>
-    <image:image><image:loc>https://sunny-chokshi.github.io/infographics/comment_injection.png</image:loc><image:title>Adversarial comment injection and comment stripping results</image:title></image:image>
-    <image:image><image:loc>https://sunny-chokshi.github.io/infographics/crypto_cheatsheet.png</image:loc><image:title>CryptoBench cryptographic API misuse detection and false alarm results</image:title></image:image>
+    <image:image><image:loc>https://sunny-chokshi.github.io/img/og-home.png</image:loc></image:image>
   </url>
-  <url><loc>https://sunny-chokshi.github.io/blog/adversarial-code-comments-dataset.html</loc><image:image><image:loc>https://sunny-chokshi.github.io/img/blog-adversarial-code-comments-dataset.png</image:loc><image:title>Adversarial code comments dataset for LLM reviewers</image:title></image:image></url>
-  <url><loc>https://sunny-chokshi.github.io/blog/llm-weak-random-number-generator-detection.html</loc><image:image><image:loc>https://sunny-chokshi.github.io/img/blog-llm-weak-random-number-generator-detection.png</image:loc><image:title>LLM weak random number generator detection test</image:title></image:image></url>
-  <url><loc>https://sunny-chokshi.github.io/blog/cryptobench-what-is-inside.html</loc><image:image><image:loc>https://sunny-chokshi.github.io/img/blog-cryptobench-what-is-inside.png</image:loc><image:title>CryptoBench: 54 snippets to test LLM crypto misuse detection</image:title></image:image></url>
-  <url><loc>https://sunny-chokshi.github.io/blog/reviewer-that-flags-everything.html</loc><image:image><image:loc>https://sunny-chokshi.github.io/img/blog-reviewer-flags-everything.png</image:loc><image:title>Detection rate alone ranks the worst LLM code reviewers first</image:title></image:image></url>
-  <url><loc>https://sunny-chokshi.github.io/blog/hex-key-size-false-alarms.html</loc><image:image><image:loc>https://sunny-chokshi.github.io/img/blog-hex-key-size.png</image:loc><image:title>A hex literal made LLM code reviewers raise false alarms</image:title></image:image></url>
+  <url><loc>https://sunny-chokshi.github.io/research.html</loc>
+    <image:image><image:loc>https://sunny-chokshi.github.io/img/profile.jpg</image:loc><image:title>Sunny Chokshi</image:title></image:image>
+    <image:image><image:loc>https://sunny-chokshi.github.io/img/og-home.png</image:loc></image:image>
+  </url>
+  <url><loc>https://sunny-chokshi.github.io/publications.html</loc>
+    <image:image><image:loc>https://sunny-chokshi.github.io/img/profile.jpg</image:loc><image:title>Sunny Chokshi</image:title></image:image>
+    <image:image><image:loc>https://sunny-chokshi.github.io/img/og-home.png</image:loc></image:image>
+  </url>
+  <url><loc>https://sunny-chokshi.github.io/reviewing.html</loc>
+    <image:image><image:loc>https://sunny-chokshi.github.io/img/profile.jpg</image:loc><image:title>Sunny Chokshi</image:title></image:image>
+    <image:image><image:loc>https://sunny-chokshi.github.io/img/og-home.png</image:loc></image:image>
+  </url>
+  <url><loc>https://sunny-chokshi.github.io/datasets.html</loc>
+    <image:image><image:loc>https://sunny-chokshi.github.io/img/profile.jpg</image:loc><image:title>Sunny Chokshi</image:title></image:image>
+    <image:image><image:loc>https://sunny-chokshi.github.io/img/og-home.png</image:loc></image:image>
+  </url>
+  <url><loc>https://sunny-chokshi.github.io/blog.html</loc>
+    <image:image><image:loc>https://sunny-chokshi.github.io/img/profile.jpg</image:loc><image:title>Sunny Chokshi</image:title></image:image>
+    <image:image><image:loc>https://sunny-chokshi.github.io/img/og-home.png</image:loc></image:image>
+  </url>
+  <url><loc>https://sunny-chokshi.github.io/contact.html</loc>
+    <image:image><image:loc>https://sunny-chokshi.github.io/img/profile.jpg</image:loc><image:title>Sunny Chokshi</image:title></image:image>
+    <image:image><image:loc>https://sunny-chokshi.github.io/img/og-home.png</image:loc></image:image>
+  </url>
+  <url><loc>https://sunny-chokshi.github.io/projects.html</loc>
+    <image:image><image:loc>https://sunny-chokshi.github.io/img/profile.jpg</image:loc><image:title>Sunny Chokshi</image:title></image:image>
+    <image:image><image:loc>https://sunny-chokshi.github.io/img/og-home.png</image:loc></image:image>
+  </url>
+  <url><loc>https://sunny-chokshi.github.io/presentations.html</loc>
+    <image:image><image:loc>https://sunny-chokshi.github.io/img/profile.jpg</image:loc><image:title>Sunny Chokshi</image:title></image:image>
+    <image:image><image:loc>https://sunny-chokshi.github.io/img/og-home.png</image:loc></image:image>
+  </url>
+  <url><loc>https://sunny-chokshi.github.io/blog/adversarial-code-comments-dataset.html</loc>
+    <image:image><image:loc>https://sunny-chokshi.github.io/img/blog-adversarial-code-comments-dataset.png</image:loc><image:title>One comment changed what LLM code reviewers said about the same vulnerable code. CommentInject: 30 vulnerable functions,</image:title></image:image>
+  </url>
+  <url><loc>https://sunny-chokshi.github.io/blog/cryptobench-what-is-inside.html</loc>
+    <image:image><image:loc>https://sunny-chokshi.github.io/img/blog-cryptobench-what-is-inside.png</image:loc><image:title>CryptoBench: 54 snippets, 9 misuse classes, 1,890 recorded trials, 7 models. Weak PRNG was the lowest class at 38.3% det</image:title></image:image>
+  </url>
+  <url><loc>https://sunny-chokshi.github.io/blog/hex-key-size-false-alarms.html</loc>
+    <image:image><image:loc>https://sunny-chokshi.github.io/img/blog-hex-key-size.png</image:loc><image:title>0xC00 equals a 3072-bit key. Secure, yet it drew false alarms. Minus 4.5 points balanced accuracy, plus 9.1 points false</image:title></image:image>
+  </url>
+  <url><loc>https://sunny-chokshi.github.io/blog/llm-weak-random-number-generator-detection.html</loc>
+    <image:image><image:loc>https://sunny-chokshi.github.io/img/blog-llm-weak-random-number-generator-detection.png</image:loc><image:title>15, 7, 1, 0: how often three local LLMs flagged four Python snippets with the same weak random number generator bug, out</image:title></image:image>
+  </url>
+  <url><loc>https://sunny-chokshi.github.io/blog/reviewer-that-flags-everything.html</loc>
+    <image:image><image:loc>https://sunny-chokshi.github.io/img/blog-reviewer-flags-everything.png</image:loc><image:title>100% detection rate can tell you little. qwen2.5-coder 0.5B flagged 540 of 540 snippets, balanced accuracy 0.500. gpt-os</image:title></image:image>
+  </url>
+  <url><loc>https://sunny-chokshi.github.io/papers/analyze-the-code-not-the-comments.html</loc>
+    <image:image><image:loc>https://sunny-chokshi.github.io/img/og-analyze-the-code-not-the-comments.png</image:loc></image:image>
+  </url>
+  <url><loc>https://sunny-chokshi.github.io/papers/does-indirection-hurt.html</loc>
+    <image:image><image:loc>https://sunny-chokshi.github.io/img/og-does-indirection-hurt.png</image:loc></image:image>
+  </url>
+  <url><loc>https://sunny-chokshi.github.io/papers/not-all-adversarial-comments.html</loc>
+    <image:image><image:loc>https://sunny-chokshi.github.io/img/og-not-all-adversarial-comments.png</image:loc></image:image>
+  </url>
 </urlset>
