@@ -17,3 +17,11 @@ body.pg{padding-top:76px}
 @media(max-width:1020px){.top-nm{display:none}.top{padding:0 clamp(14px,3vw,28px)}}
 @media(max-width:820px){.top{height:68px;padding:0 10px}.top nav{gap:2px;overflow-x:auto;justify-content:flex-start}.top nav a{flex:0 0 auto;min-width:46px;max-width:none;padding:0 4px;font-size:.64rem}body.pg{padding-top:68px}}
 @media(max-width:480px){.top nav a{min-width:40px;padding:0 1px;font-size:.58rem}.top nav svg{width:15px;height:15px}}
+
+/* social icons, right end of the menu */
+.top-soc{flex:none;display:flex;align-items:center;gap:6px;margin:0 0 0 14px;padding-left:14px;border-left:1px solid #e4e9f1}
+.top-soc a{display:flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:50%;color:#51627e;transition:background .15s,color .15s}
+.top-soc a:hover,.top-soc a:focus-visible{background:#eaf1ff;color:#075ce5}
+.top-soc svg{width:18px;height:18px;display:block}
+@media(max-width:1400px){.top nav{gap:2px}.top-soc{margin-left:6px;padding-left:0;border-left:0;gap:0}.top-soc a{width:28px;height:28px}.top-soc svg{width:16px;height:16px}}
+@media(max-width:820px){.top-soc{display:none}}
