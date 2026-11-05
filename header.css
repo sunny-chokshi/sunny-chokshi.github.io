@@ -2,9 +2,9 @@
 html{overflow-y:scroll}
 .top{position:fixed;top:0;left:0;right:0;z-index:50;box-sizing:border-box;height:76px;display:flex;flex-direction:row;align-items:center;padding:0 clamp(18px,4vw,60px);background:#ffffffed;border-bottom:1px solid #e4e9f1;box-shadow:0 3px 16px #15274708;-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);font-family:Manrope,system-ui,sans-serif;font-size:16px;line-height:1.2;text-align:left}
 .top a{text-decoration:none}
-.top-av{flex:none;box-sizing:border-box;width:44px;height:44px;margin:0 12px 0 0;padding:0;border:3px solid #55a2ff;border-radius:50%;overflow:hidden;box-shadow:0 0 0 4px rgba(25,181,216,.18);background:none}
-.top-av img{display:block;width:100%;height:100%;object-fit:cover;border-radius:50%}
-.top-nm{margin:0 36px 0 0;color:#101b32;font-weight:800;font-size:.85rem;line-height:1.15;white-space:nowrap}
+.top-nm{flex:none;margin:0 14px 0 0;color:#0e1b33;font-size:25px;font-weight:800;letter-spacing:-.025em;line-height:1;white-space:nowrap}
+.top-sl{flex:none;display:flex;align-items:center;gap:14px;margin:0 28px 0 0;color:#4a5a75;font-size:15px;font-weight:500;white-space:nowrap}
+.top-sl i{font-style:normal;color:#075ce5;font-size:28px;font-weight:300;line-height:1;transform:skewX(-14deg)}
 .top nav{display:flex;align-items:stretch;justify-content:center;gap:clamp(4px,1vw,20px);flex:1;min-width:0;height:100%;margin:0;padding:0;border:0;overflow:hidden}
 /* equal fixed-share links: position no longer depends on label width or font weight */
 .top nav a{box-sizing:border-box;flex:1 1 0;min-width:0;max-width:88px;padding:0;border:0;border-bottom:3px solid transparent;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;color:#25324a;font-size:.72rem;font-weight:700;letter-spacing:.02em;white-space:nowrap;background:transparent}
@@ -13,6 +13,7 @@ html{overflow-y:scroll}
 .top nav a[aria-current] svg{color:#075ce5}
 .top nav a:hover{background:#f4f8ff}
 body.pg{padding-top:76px}
-@media(max-width:1020px){.top-av,.top-nm{display:none}.top{padding:0 clamp(14px,3vw,28px)}}
+@media(max-width:1280px){.top-sl{display:none}}
+@media(max-width:1020px){.top-nm{display:none}.top{padding:0 clamp(14px,3vw,28px)}}
 @media(max-width:820px){.top{height:68px;padding:0 10px}.top nav{gap:2px;overflow-x:auto;justify-content:flex-start}.top nav a{flex:0 0 auto;min-width:46px;max-width:none;padding:0 4px;font-size:.64rem}body.pg{padding-top:68px}}
 @media(max-width:480px){.top nav a{min-width:40px;padding:0 1px;font-size:.58rem}.top nav svg{width:15px;height:15px}}
