@@ -244,3 +244,6 @@ main>.page>h2{margin-left:auto;margin-right:auto;max-width:1180px;width:100%}
 /* icons on blog buttons */
 main>.page>.acts .btn{display:inline-flex;align-items:center}
 .btn .bi{display:inline-grid;place-items:center;flex:0 0 auto;width:22px;height:22px;margin-right:9px;border-radius:50%;background:var(--c,#2a6df4);color:#fff;font-size:.68rem;font-weight:800;line-height:1}
+.seo-category-links{display:flex;justify-content:center;gap:24px;padding:16px 24px;border-top:1px solid #dfe6f2;font-size:.82rem}
+.seo-category-links a{color:#075ce5;font-weight:700}
+@media(max-width:600px){.seo-category-links{gap:14px;flex-wrap:wrap}}
