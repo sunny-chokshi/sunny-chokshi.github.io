@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url><loc>https://sunny-chokshi.github.io/</loc>
+    <image:image><image:loc>https://sunny-chokshi.github.io/img/profile.jpg</image:loc><image:title>Sunny Chokshi</image:title></image:image>
+    <image:image><image:loc>https://sunny-chokshi.github.io/infographics/comment_injection.png</image:loc><image:title>Adversarial comment injection and comment stripping results</image:title></image:image>
+    <image:image><image:loc>https://sunny-chokshi.github.io/infographics/crypto_cheatsheet.png</image:loc><image:title>CryptoBench cryptographic API misuse detection and false alarm results</image:title></image:image>
+  </url>
+  <url><loc>https://sunny-chokshi.github.io/blog/adversarial-code-comments-dataset.html</loc><image:image><image:loc>https://sunny-chokshi.github.io/img/blog-adversarial-code-comments-dataset.png</image:loc><image:title>Adversarial code comments dataset for LLM reviewers</image:title></image:image></url>
+  <url><loc>https://sunny-chokshi.github.io/blog/llm-weak-random-number-generator-detection.html</loc><image:image><image:loc>https://sunny-chokshi.github.io/img/blog-llm-weak-random-number-generator-detection.png</image:loc><image:title>LLM weak random number generator detection test</image:title></image:image></url>
+  <url><loc>https://sunny-chokshi.github.io/blog/cryptobench-what-is-inside.html</loc><image:image><image:loc>https://sunny-chokshi.github.io/img/blog-cryptobench-what-is-inside.png</image:loc><image:title>CryptoBench: 54 snippets to test LLM crypto misuse detection</image:title></image:image></url>
+  <url><loc>https://sunny-chokshi.github.io/blog/reviewer-that-flags-everything.html</loc><image:image><image:loc>https://sunny-chokshi.github.io/img/blog-reviewer-flags-everything.png</image:loc><image:title>Detection rate alone ranks the worst LLM code reviewers first</image:title></image:image></url>
+  <url><loc>https://sunny-chokshi.github.io/blog/hex-key-size-false-alarms.html</loc><image:image><image:loc>https://sunny-chokshi.github.io/img/blog-hex-key-size.png</image:loc><image:title>A hex literal made LLM code reviewers raise false alarms</image:title></image:image></url>
+</urlset>
