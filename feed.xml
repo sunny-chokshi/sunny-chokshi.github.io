@@ -5,8 +5,15 @@
 <link>https://sunny-chokshi.github.io/blog/</link>
 <description>Short notes on my own LLM security experiments, with numbers and links to the open data.</description>
 <language>en</language>
-<lastBuildDate>Wed, 04 Nov 2026 00:00:00 +0000</lastBuildDate>
+<lastBuildDate>Fri, 06 Nov 2026 00:00:00 +0000</lastBuildDate>
 <atom:link href="https://sunny-chokshi.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+<item>
+<title>LLM benchmark stimulus audit: 33 of 80 pairs not clean</title>
+<link>https://sunny-chokshi.github.io/blog/llm-benchmark-stimulus-audit.html</link>
+<guid isPermaLink="true">https://sunny-chokshi.github.io/blog/llm-benchmark-stimulus-audit.html</guid>
+<pubDate>Fri, 06 Nov 2026 00:00:00 +0000</pubDate>
+<description>I audited my own LLM benchmark after the runs. 33 of 80 snippet pairs differed in more than the misuse. Data and rerun script on Zenodo.</description>
+</item>
 <item>
 <title>Adversarial code comments dataset for LLM reviewers</title>
 <link>https://sunny-chokshi.github.io/blog/adversarial-code-comments-dataset.html</link>

@@ -53,6 +53,9 @@
   <url><loc>https://sunny-chokshi.github.io/blog/hex-key-size-false-alarms.html</loc>
     <image:image><image:loc>https://sunny-chokshi.github.io/img/blog-hex-key-size.png</image:loc><image:title>0xC00 equals a 3072-bit key. Secure, yet it drew false alarms. Minus 4.5 points balanced accuracy, plus 9.1 points false</image:title></image:image>
   </url>
+  <url><loc>https://sunny-chokshi.github.io/blog/llm-benchmark-stimulus-audit.html</loc>
+    <image:image><image:loc>https://sunny-chokshi.github.io/img/blog-llm-benchmark-stimulus-audit.png</image:loc><image:title>LLM benchmark stimulus audit: 33 of 80 snippet pairs were not clean matches. 47 clean pairs: balanced accuracy drop 5.3 </image:title></image:image>
+  </url>
   <url><loc>https://sunny-chokshi.github.io/blog/llm-weak-random-number-generator-detection.html</loc>
     <image:image><image:loc>https://sunny-chokshi.github.io/img/blog-llm-weak-random-number-generator-detection.png</image:loc><image:title>15, 7, 1, 0: how often three local LLMs flagged four Python snippets with the same weak random number generator bug, out</image:title></image:image>
   </url>
