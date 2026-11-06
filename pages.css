@@ -55,3 +55,8 @@ body.xp main{max-width:1180px;padding:26px 28px 104px}
 .sm-box a{font-weight:700;color:#075ce5;text-decoration:none}
 .sm-box a:hover{text-decoration:underline}
 .sm-box span{display:block;font-size:14px;color:#60708a;line-height:1.5;margin-top:2px}
+
+/* phone fixes */
+pre{max-width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch;font-size:.85em}
+.xp .label{font-size:12px}
+@media(max-width:900px){.xp .project-grid{grid-template-columns:minmax(0,1fr)}.xp .project{min-width:0;overflow-wrap:break-word}.xp .project .number{flex:none;white-space:nowrap}}
