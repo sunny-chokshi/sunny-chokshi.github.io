@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/feed.xsl"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
 <title>Sunny Chokshi, LLM security notes</title>
-<link>https://sunny-chokshi.github.io/blog/</link>
-<description>Short notes on my own LLM security experiments, with numbers and links to the open data.</description>
+<link>https://sunny-chokshi.github.io/blog.html</link>
+<description>Research notes by Sunny Chokshi on LLM code security: adversarial comment injection, vulnerability detection, cryptographic API misuse and false alarms, with open datasets and DOIs.</description>
 <language>en</language>
 <lastBuildDate>Fri, 06 Nov 2026 00:00:00 +0000</lastBuildDate>
 <atom:link href="https://sunny-chokshi.github.io/feed.xml" rel="self" type="application/rss+xml"/>
