@@ -71,3 +71,16 @@ pre{max-width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch;font-size:.8
 .cite-btn{font:inherit;font-size:.85rem;font-weight:700;padding:7px 14px;border-radius:999px;border:1px solid #b9c7e4;background:#fff;color:#075ce5;cursor:pointer}
 .cite-btn:hover,.cite-btn:focus-visible{background:#eaf1ff}
 @media(prefers-color-scheme:dark){:root:not([data-theme="light"]) .cite{border-color:#253049}:root:not([data-theme="light"]) .cite-bib{background:#151c2a;color:#d7deea}:root:not([data-theme="light"]) .cite-btn{background:transparent;border-color:#33425f;color:#8f9cff}}
+
+/* cite ribbon */
+html{scroll-behavior:smooth}
+.cite{scroll-margin-top:96px}
+.cite-ribbon{display:flex;align-items:center;gap:12px;margin:18px 0 22px;padding:12px 18px;border:1px solid #cfe0ff;border-left:4px solid #075ce5;border-radius:12px;background:linear-gradient(90deg,#eef4ff,#f8fbff);color:#0e1b33;text-decoration:none;font-size:.95rem;transition:box-shadow .15s,transform .15s}
+.cite-ribbon svg{width:22px;height:22px;flex:none;color:#075ce5}
+.cite-ribbon span{flex:1}
+.cite-ribbon strong{font-weight:700}
+.cite-ribbon .cr-arrow{animation:crb 1.6s ease-in-out infinite}
+.cite-ribbon:hover,.cite-ribbon:focus-visible{box-shadow:0 6px 18px #075ce522;transform:translateY(-1px)}
+@keyframes crb{0%,100%{transform:translateY(-2px)}50%{transform:translateY(3px)}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.cite-ribbon .cr-arrow{animation:none}}
+@media(max-width:820px){.cite{scroll-margin-top:84px}}
