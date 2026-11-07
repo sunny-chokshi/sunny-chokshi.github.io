@@ -65,3 +65,37 @@
 @media(max-width:480px){.rp-metrics{grid-template-columns:1fr 1fr;gap:10px}.rp-m{padding:14px}.rp-m b{font-size:1.6rem}.rp-steps{grid-template-columns:1fr}.rp-phil{flex-direction:column;align-items:flex-start}}
 
 .rp-card figure img[src$=".svg"]{object-fit:contain;background:#06234f}
+
+.rp-hero{position:relative;overflow:hidden}
+.rp-wave{position:absolute;left:0;right:0;bottom:0;width:100%;height:55%;pointer-events:none}
+.rp-hero .rp-wrap{position:relative}
+.rp-m{background:#f1f6ff;border-color:#c9daf8;height:100%}
+.rp-two{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:start;padding-top:44px}
+.rp-two .rp-sec{padding-top:0}
+.rp-find{grid-template-columns:1fr;gap:6px;padding:22px}
+.rp-fill.rp-ok{background:linear-gradient(90deg,#15803d,#4ade80)}
+.rp-track{background:#e5e7eb}
+.rp-d{grid-template-columns:48px 1fr;row-gap:10px}
+.rp-d .rp-btn{grid-column:1/-1;justify-self:start}
+.rp-s{display:block}
+.rp-s:before{content:none}
+.rp-s i{position:absolute;top:-12px;left:14px;width:28px;height:28px;border-radius:50%;background:var(--b);color:#fff;font:800 14px/28px Manrope,sans-serif;text-align:center;font-style:normal;box-shadow:0 2px 8px #075bff55}
+.rp-s{margin-top:12px}
+.rp-s:not(:last-child):after{content:"";position:absolute;right:-12px;top:50%;width:10px;height:10px;border-top:3px solid #7fa8f5;border-right:3px solid #7fa8f5;transform:translateY(-50%) rotate(45deg)}
+.rp-philw{background:linear-gradient(120deg,#e8f1ff,#d7e8ff);border-top:1px solid var(--line);margin-top:48px}
+.rp-philw .rp-phil{background:none;border:0;border-radius:0;margin:0;padding:18px 0;gap:16px}
+.rp-philw .rp-phil div{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.rp-philw .rp-phil h2{margin:0;font-size:1.1rem;color:var(--ink)}
+@media(max-width:1000px){.rp-two{grid-template-columns:1fr}.rp-s:not(:last-child):after{display:none}}
+@media(max-width:480px){.rp-philw .rp-phil div{display:block}.rp-philw .rp-phil h2{margin-bottom:2px}}
+.rp-links{gap:6px}
+.rp-links a{padding:0 11px;font-size:12.5px;min-height:32px}
+.rp-card{grid-template-columns:38% 1fr}
+.rp-card div.rp-t{padding:18px 18px}
+.rp-card figure img:not([src$=".svg"]){object-position:left center}
+.rp-card figure img[src$=".svg"]{background:none}
+.rp-card figure img[src*="cryptographic"]{background:#06234f}
+.rp-card{grid-template-columns:46% 1fr}
+.rp-card figure img:not([src$=".svg"]){object-position:center}
+.rp-card figure.rp-art img{background:none}
+@media(max-width:760px){.rp-card{grid-template-columns:1fr}}
