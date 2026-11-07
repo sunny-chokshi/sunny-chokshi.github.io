@@ -25,3 +25,20 @@ body.pg{padding-top:76px}
 .top-soc svg{width:18px;height:18px;display:block}
 @media(max-width:1400px){.top nav{gap:2px}.top-soc{margin-left:6px;padding-left:0;border-left:0;gap:0}.top-soc a{width:28px;height:28px}.top-soc svg{width:16px;height:16px}}
 @media(max-width:820px){.top-soc{display:none}}
+
+/* nav v2: larger icons, readable labels, clearer active/hover/focus states */
+.top{-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+.top-nm{font-size:26px;letter-spacing:-.035em}
+.top-sl{font-size:15px;font-weight:500;letter-spacing:-.005em}
+.top nav a{max-width:100px;gap:6px;font-size:.8rem;font-weight:600;letter-spacing:0;color:#2a3752;border-bottom-width:3px;transition:background .15s,color .15s}
+.top nav svg{width:22px;height:22px;stroke-width:1.7;color:#5a6b87;transition:color .15s,transform .15s}
+.top nav a:hover{background:#f1f6ff;color:#075ce5}
+.top nav a:hover svg{color:#075ce5;transform:translateY(-1px)}
+.top nav a[aria-current]{background:linear-gradient(#075ce500,#075ce510);color:#075ce5;font-weight:700}
+.top nav a:focus-visible,.top-soc a:focus-visible{outline:2px solid #075ce5;outline-offset:-5px;border-radius:10px}
+.top-soc{gap:4px}
+.top-soc a{width:40px;height:40px}
+.top-soc svg{width:20px;height:20px}
+@media(max-width:1400px){.top-soc a{width:34px;height:34px}.top-soc svg{width:19px;height:19px}.top nav a{font-size:.76rem}}
+@media(max-width:820px){.top nav a{font-size:.7rem;min-width:50px}.top nav svg{width:20px;height:20px}}
+@media(max-width:480px){.top nav a{font-size:.66rem;min-width:44px}.top nav svg{width:18px;height:18px}}
