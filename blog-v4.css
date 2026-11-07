@@ -3,7 +3,7 @@ html{scroll-behavior:smooth}
 .bl{font-family:Manrope,system-ui,sans-serif;color:#0e1b33;padding-top:0}
 .bl-w{max-width:1240px;margin:0 auto;padding:0 clamp(16px,3vw,32px)}
 .bl-pill{display:inline-block;padding:6px 14px;border-radius:99px;background:#dbe8ff;color:#0a4fc4;font-size:12px;font-weight:800;letter-spacing:.04em;text-transform:uppercase}
-.bl-pill.sm{padding:5px 12px;font-size:11px;background:#2d6fe0;color:#fff;text-transform:none;letter-spacing:.01em}
+.bl-pill.sm{padding:5px 12px;font-size:11px;background:#1d5fd1;color:#fff;text-transform:none;letter-spacing:.01em}
 /* hero band */
 .bl-hero{position:relative;overflow:hidden;background:radial-gradient(900px 340px at 82% 70%,#bcd6ff,#ffffff00 70%),linear-gradient(100deg,#f6f9ff,#e3eeff 60%,#d4e4ff)}
 .bl-hero::after{content:"";position:absolute;right:-8%;bottom:-60%;width:70%;height:110%;border-radius:50%;background:radial-gradient(closest-side,#9fc3ff55,#ffffff00);pointer-events:none}
@@ -54,15 +54,15 @@ html{scroll-behavior:smooth}
 .bc{display:flex;flex-direction:column;overflow:hidden;border:1px solid #dfe6f2;border-radius:12px;background:#fff;box-shadow:0 8px 20px -16px #172c4f88;transition:transform .15s,box-shadow .15s}
 .bc[hidden]{display:none}
 .bc:hover{transform:translateY(-3px);box-shadow:0 16px 28px -18px #075ce5}
-.bc-img{position:relative;display:block;aspect-ratio:2.2/1;overflow:hidden;background:#0b1b3d}
+.bc-img{position:relative;display:block;aspect-ratio:16/9;overflow:hidden;background:#0b1b3d}
 .bc-img img{display:block;width:100%;height:100%;object-fit:cover;object-position:center 45%}
 .bc-tag{position:absolute;left:10px;bottom:8px;padding:3px 10px;border-radius:99px;border:1px solid #3ddc97;background:#0b1b3de6;color:#fff;font-size:11px;font-weight:800}
 .bc-tag.preprint{border-color:#ffc24a}
 .bc-b{display:flex;flex-direction:column;flex:1;padding:12px 14px 12px}
 .bc h3{margin:0 0 5px;font-size:16px;line-height:1.25;letter-spacing:-.02em}
 .bc h3 a{color:#0e1b33;text-decoration:none}.bc h3 a:hover{color:#075ce5}
-.bc p{margin:0;font-size:12px;line-height:1.5;color:#526079;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
-.bc-m{display:flex;align-items:center;gap:6px 14px;flex-wrap:wrap;margin-top:auto;padding-top:10px;font-size:11px;font-weight:600;color:#5a6b87}
+.bc p{margin:0;font-size:13px;line-height:1.5;color:#526079;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.bc-m{display:flex;align-items:center;gap:6px 14px;flex-wrap:wrap;margin-top:auto;padding-top:10px;font-size:12px;font-weight:600;color:#5a6b87}
 .bc-m span{display:inline-flex;align-items:center;gap:5px}
 .bc-rm{margin-left:auto;font-size:12px;font-weight:800;color:#075ce5;text-decoration:none}
 /* subscribe strip */
@@ -72,6 +72,12 @@ html{scroll-behavior:smooth}
 .bl-sub span{flex:1;min-width:220px;font-size:13px;color:#4a5a75;border-left:1px solid #c9dcfb;padding-left:16px}
 /* responsive */
 @media(max-width:1000px){.bl-tiles{grid-template-columns:repeat(2,1fr)}.bl-g{grid-template-columns:repeat(2,minmax(0,1fr))}}
-@media(max-width:760px){.bl-hero-in{grid-template-columns:1fr;min-height:0;padding-top:22px;padding-bottom:12px}.bl-hero-img{justify-self:center;max-width:300px}.bl-f{grid-template-columns:1fr}.bl-f-img{min-height:0;aspect-ratio:3/2}.bl-f-t{padding:16px 18px 20px}.bl-g{grid-template-columns:1fr}.bc-img{aspect-ratio:2.4/1}.bl-tiles{grid-template-columns:1fr 1fr}.bl-sub span{border-left:0;padding-left:0}}
+@media(max-width:760px){.bl-hero-in{grid-template-columns:1fr;min-height:0;padding-top:22px;padding-bottom:12px}.bl-hero-img{justify-self:center;max-width:300px}.bl-f{grid-template-columns:1fr}.bl-f-img{min-height:0;aspect-ratio:3/2}.bl-f-t{padding:16px 18px 20px}.bl-g{grid-template-columns:1fr}.bl-tiles{grid-template-columns:1fr 1fr}.bl-sub span{border-left:0;padding-left:0}}
 @media(max-width:420px){.bl-tiles{grid-template-columns:1fr}}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}html{scroll-behavior:auto}}
+/* polish: 16:9 images, readable meta, focus, disabled filter, experiment tag */
+.bc-tag.experiment{border-color:#b794ff}
+.bl-f2 button:disabled{opacity:.55;cursor:not-allowed;background:#f4f7fc}
+.bl-f2 button:disabled:hover{border-color:#d5e2f7;color:#2a3752}
+.bl-f2 button:focus-visible,.bt:focus-visible,.bc h3 a:focus-visible,.bc-rm:focus-visible,.bl-btn:focus-visible,.bl-ghost:focus-visible,.bl-h>a:focus-visible,.bl-f-t h2 a:focus-visible{outline:3px solid #075ce5;outline-offset:2px;border-radius:6px}
+.bl-f-t h2 a:focus-visible,.bl-ghost:focus-visible{outline-color:#fff}

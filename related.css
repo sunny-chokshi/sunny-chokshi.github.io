@@ -1,0 +1,10 @@
+/* related research block on blog articles */
+.related{margin:44px 0 8px;padding:22px 0 0;border-top:1px solid #dfe6f2}
+.related h2{margin:0 0 14px;font-size:1.3rem}
+.rel-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.related h3{margin:0 0 8px;font-size:.78rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:#075ce5}
+.related ul{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+.related li a{font-size:1rem;font-weight:700;line-height:1.35}
+.related li span{display:block;margin-top:2px;font-size:.84rem;line-height:1.4;color:#4a5a75}
+.rel-cite{margin:16px 0 0;font-size:.88rem;line-height:1.55;color:#4a5a75}
+@media(max-width:760px){.rel-grid{grid-template-columns:1fr}}
